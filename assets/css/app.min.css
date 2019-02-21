@@ -5205,14 +5205,34 @@ table[data-toggle=table] {
     background: transparent;
 }
 
-.ct-legend.ct-legend-inside {
+/* .ct-legend.ct-legend-inside {
     position: relative;
     z-index: 10;
     list-style: none;
     text-align: center;
-    /* padding-left: 5em !important; */
-    /* top: -2rem; */
+    padding-left: 5em !important;
+    top: -2rem;
+} */
+
+@media screen and (max-width:1199.98px) {
+    .ct-legend.ct-legend-inside {
+        position: relative;
+        z-index: 10;
+        list-style: none;
+        text-align: center;
+        margin-top: -28%;
+    }
 }
+@media screen and (min-width:1200px) {
+    .ct-legend.ct-legend-inside {
+        position: relative;
+        z-index: 10;
+        list-style: none;
+        text-align: center;
+        margin-top: -29%;
+    }
+}
+
 
 .ct-legend.ct-legend-inside li {
     position: relative;
