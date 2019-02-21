@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>W.Capital - SAFI -3-</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Eknowit" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Chartist Chart CSS -->
+    <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar-->
+    <header id="topnav">
+
+        <!-- Topbar Start -->
+        <div class="navbar-custom" style="border: 0 solid #eceff1; box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);">
+            <div class="container-fluid">
+                <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                            <span class="pro-user-name ml-1">
+                                Usuario <i class="mdi mdi-chevron-down"></i> 
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            <!-- item-->
+                            <div class="dropdown-header noti-title">
+                                <h6 class="text-overflow m-0">Welcome !</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-user"></i>
+                                <span>My Account</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-settings"></i>
+                                <span>Settings</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-lock"></i>
+                                <span>Lock Screen</span>
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-log-out"></i>
+                                <span>Logout</span>
+                            </a>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+                <!-- LOGO -->
+                <div class="logo-box">
+                    <a href="index.html" class="logo text-center">
+                        <span class="logo-lg">
+                                <img src="assets/images/logocapital.png" alt="" height="60">
+                                <!-- <span class="logo-lg-text-light">UBold</span> -->
+                        </span>
+                        <span class="logo-sm">
+                                <!-- <span class="logo-sm-text-dark">U</span> -->
+                        <img src="assets/images/logo-sm.png" alt="" height="24">
+                        </span>
+                    </a>
+                </div>
+
+                <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                    <li class="dropdown d-none d-lg-block">
+                        <a class="nav-link waves-effect active" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="dropdown d-none d-lg-block">
+                        <a class="nav-link waves-effect" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            Estado de Cuenta
+                        </a>
+                    </li>
+                    <li class="dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            Inversiones
+                            <i class="mdi mdi-chevron-down"></i> 
+                        </a>
+                        <div class="dropdown-menu">
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <i class="fe-briefcase mr-1"></i>
+                                <span>Reporte Partícipes</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <i class="fe-user mr-1"></i>
+                                <span>Resumen Ejecutivo</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <i class="fe-bar-chart-line- mr-1"></i>
+                                <span>Listado de Inversiones</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <i class="fe-briefcase mr-1"></i>
+                                <span>Reporte por Proyecto</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="dropdown d-none d-lg-block">
+                        <a class="nav-link waves-effect" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            EEFF
+                        </a>
+                    </li>
+                    <li class="dropdown d-none d-lg-block">
+                        <a class="nav-link waves-effect" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            Actas y Presentaciones
+                        </a>
+                    </li>
+                    <li class="dropdown d-none d-lg-block">
+                        <a class="nav-link waves-effect" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            Reglamento de Participación
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- end container-fluid-->
+        </div>
+        <!-- end Topbar -->
+
+    </header>
+    <!-- End Navigation Bar-->
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="wrapper" style="padding: 74px 12px 0 12px !important;">
+        <div class="container-fluid">
+
+            <!-- start page title -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box">
+                        <!-- <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">W.Capital</a></li>
+                                <li class="breadcrumb-item active">Inicio</li>
+                            </ol>
+                        </div> -->
+                        &nbsp;<!-- <h4 class="page-title">Resumen de Fondos</h4> -->
+                    </div>
+                </div>
+            </div>
+            <!-- end page title -->
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="page-title-box m-3">
+                        <h1 class="display-4">FIVIS I</h1>
+                        <p class="lead">La Positiva Generales</p>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- Simple card -->
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-2"><strong>Capital Comprometido</strong></h5>
+                                    <hr class="style1 mt-0" style="border-color: red;">
+                                    <div class="row m-0">
+                                        <div class="col-6">
+                                            <h5 class="mt-0"><strong>Fondo</strong></h5>
+                                            <h4 class="my-3">S/. <span data-plugin="counterup">40,000,000</span></h4>
+                                        </div>
+                                        <div class="col-6">
+                                            <h5 class="mt-0"><strong>Part&iacute;cipe</strong></h5>
+                                            <h4 class="my-3">S/. <span data-plugin="counterup">13,491,086</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-6">
+                            <!-- Simple card -->
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-2"><strong>Periodos</strong></h5>
+                                    <hr class="style1 mt-0" style="border-color: red;">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="mt-0"><strong>De Inversión</strong></h5>
+                                            <h4 class="my-1"><span data-plugin="counterup">5</span> años</h4>
+                                        </div>
+                                        <div class="col-6">
+                                            <h5 class="mt-0"><strong>De Desinversión</strong></h5>
+                                            <h4 class="my-1"><span data-plugin="counterup">3</span> años</h4>
+                                        </div>
+                                    </div>
+                                    <div class="mt-1" style="position: relative;">
+                                        <div class="row">
+                                            <div class="col-4"><h6 class="text-muted text-left m-0">2012</h6></div>
+                                            <div class="col-4"><h6 class="text-muted m-0">2016</h6></div>
+                                            <div class="col-4"><h6 class="text-muted text-right m-0">2020</h6></div>
+                                        </div>
+                                        <div>
+                                            <span style="position: absolute; color:red; top:4px; left: 50%; font-size: 1.4em; font-weight: bold;">&#124;</span>
+                                        </div>
+                                        
+                                        <div class="progress progress-md mb-1">
+                                            <div class="progress-bar bg-bar-1" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <!-- Simple card -->
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2"><strong>Proyectos</strong></h5>
+                            <hr class="style1 mt-0" style="border-color: red;">
+                            <h1 class="mb-3 mt-4"><span data-plugin="counterup">11</span></h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <!-- Simple card -->
+                    <div class="card">
+                        <div class="card-body text-center" style="position: relative; height: 260px;">
+                            <h5 class="card-title mb-2"><strong>Capital Comprometido - Total</strong></h5>
+                            <hr class="style1 mt-0" style="border-color: red;">
+                            <div id="gauge-capital-total" class="ct-chart ct-golden-section"></div> 
+                            <!-- <div class="row mt-0" style="position: absolute; top: 280px; width: 100%;">
+                                <div class="col-6">
+                                    <p class="text-muted mb-1"><strong>Capital Llamado</strong></p>
+                                    <h4 class="text-muted">S/. 39,478,147</h4>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-muted mb-1"><strong>Capital por Llamar</strong></p>
+                                    <h4 style="color: #de6a6a;">S/. 621,853</h4>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <!-- Simple card -->
+                    <div class="card">
+                        <div class="card-body text-center" style="position: relative; height: 260px;">
+                            <h5 class="card-title mb-2"><strong>Capital Comprometido - La Positiva Generales</strong></h5>
+                            <hr class="style1 mt-0" style="border-color: red;">
+                            <div id="gauge-capital-participe" class="ct-chart ct-golden-section"></div> 
+                            <!-- <div class="row mt-0" style="position: absolute; top: 280px; width: 100%;">
+                                <div class="col-6">
+                                    <p class="text-muted mb-1"><strong>Capital Llamado</strong></p>
+                                    <h4 class="text-muted">S/. 983,005</h4>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-muted mb-1"><strong>Capital por Llamar</strong></p>
+                                    <h4 style="color: #de6a6a;">S/. 15,484</h4>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- Simple card -->
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-2"><strong>Distribución de Capital</strong></h5>
+                                    <hr class="style1 mt-0" style="border-color: red;">
+                                    <div class="row mt-2">
+                                        <div class="col-6 border-right">
+                                            <h5 class="card-title mb-2"><strong>Fondo</strong></h5>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h4>S/. <span data-plugin="counterup">13,500,000</span></h4>
+                                                    <p class="text-muted font-13 mb-0">Distribuido</p>            
+                                                </div>
+                                            </div>
+                                            <!-- <hr> -->
+                                            <div class="row mt-2">
+                                                <div class="col">
+                                                    <h4>S/. <span data-plugin="counterup">43,491,086</span></h4>
+                                                    <p class="text-muted font-13 mb-0">Por Distribuir</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <h5 class="card-title mb-2"><strong>Partícipe</strong></h5>
+                                            <div class="row">
+                                                    <div class="col">
+                                                        <h4>S/. <span data-plugin="counterup">3,500,000</span></h4>
+                                                        <p class="text-muted font-13 mb-0">Distribuido</p>            
+                                                    </div>
+                                            </div>
+                                            <!-- <hr> -->
+                                            <div class="row mt-2">
+                                                <div class="col">
+                                                    <h4>S/. <span data-plugin="counterup">13,491,086</span></h4>
+                                                    <p class="text-muted font-13 mb-0">Por Distribuir</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-6">
+                            <!-- Simple card -->
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-2 "><strong>Utilidad</strong></h5>
+                                    <hr class="style1 mt-0" style="border-color: red;">
+                                    <div class="row mt-2">
+                                        <div class="col-6 border-right">
+                                            <h5 class="card-title mb-2"><strong>Fondo</strong></h5>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h4>S/. <span data-plugin="counterup">13,500,000</span></h4>
+                                                    <p class="text-muted font-13 mb-0">Distribuido</p>            
+                                                </div>
+                                            </div>
+                                            <!-- <hr class="style1"> -->
+                                            <div class="row mt-2">
+                                                <div class="col">
+                                                    <h4>S/. <span data-plugin="counterup">43,491,086</span></h4>
+                                                    <p class="text-muted font-13 mb-0">Por Distribuir</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <h5 class="card-title mb-2"><strong>Partícipe</strong></h5>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h4>S/. <span data-plugin="counterup">3,500,000</span></h4>
+                                                    <p class="text-muted font-13 mb-0">Distribuido</p>            
+                                                </div>
+                                            </div>
+                                            <!-- <hr class="style1"> -->
+                                            <div class="row mt-2">
+                                                <div class="col">
+                                                    <h4>S/. <span data-plugin="counterup">13,491,086</span></h4>
+                                                    <p class="text-muted font-13 mb-0">Por Distribuir</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <!-- Simple card -->
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2"><strong>TIR</strong></h5>
+                            <hr class="my-1" style="border-color: red;">
+                            <div class="row my-1">
+                                <div class="col-6">
+                                    <h4><span data-plugin="counterup">11.26</span>%</h4>
+                                    <p class="text-muted font-13 mb-0">Portafolio</p>  
+                                </div>
+                                <div class="col-6">
+                                    <h4><span data-plugin="counterup">6.84</span>%</h4>
+                                    <p class="text-muted font-13 mb-0">Partícipe</p>  
+                                </div>
+                            </div>
+
+                            <h5 class="card-title mb-2"><strong>Múltiplo</strong></h5>
+                            <hr class="my-1" style="border-color: red;">
+                            <div class="row my-1">
+                                <div class="col-6">
+                                    <h4><span data-plugin="counterup">1.444</span>x</h4>
+                                    <p class="text-muted font-13 mb-0">Portafolio</p>  
+                                </div>
+                                <div class="col-6">
+                                    <h4><span data-plugin="counterup">1.443</span>x</h4>
+                                    <p class="text-muted font-13 mb-0">Partícipe</p>  
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end wrapper -->
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+
+            </div>
+        </div>
+    </footer>
+    <!-- end Footer -->
+
+    <!-- Right Sidebar -->
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!--Chartist Chart-->
+    <script src="assets/libs/chartist/chartist.min.js"></script>
+    <script src="assets/libs/chartist/chartist-plugin-tooltip.min.js"></script>
+
+    <!-- Ion Range Slider-->
+    <script src="assets/libs/ion-rangeslider/ion.rangeSlider.min.js"></script>
+
+    <!-- Sparkline charts -->
+    <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Dashboard init JS -->
+    <script src="assets/js/pages/dashboard-wcap1.init.js"></script>
+
+    <!-- App js-->
+    <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>
