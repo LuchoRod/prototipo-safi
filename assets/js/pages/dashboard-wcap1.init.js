@@ -2,33 +2,41 @@ var seq = 0,
     delays = 80,
     durations = 500;
 new Chartist.Pie("#gauge-capital-total", {
-    labels:['S/. 39,478,147','S/. 621,853'],
+    labels: ['S/. 39,478,147 (98.45%)', 'S/. 621,853 (1.55%)'],
     series: [
-        {meta: 'Capital Llamado (%)', value: 98.45},
-        {meta: 'Capital por Llamar (%)', value: 1.55}
+        { meta: 'Capital Llamado (%)', value: 98.45 },
+        { meta: 'Capital por Llamar (%)', value: 1.55 }
     ]
 }, {
     startAngle: 270,
     total: 200,
-    chartPadding: 40,
+    chartPadding: 25,
     labelOffset: 75,
     labelDirection: 'explode',
-    plugins: [Chartist.plugins.tooltip()]
+    plugins: [Chartist.plugins.legend({
+        legendNames: ['Capital Llamado', 'Capital por Llamar'],
+        position: 'bottom',
+        clickable: false
+    })]
 }), new Chartist.Pie("#gauge-capital-participe", {
-    labels:['S/. 984,492','S/. 15,508'],
+    labels: ['S/. 984,492 (98.45%)', 'S/. 15,508 (1.55%)'],
     series: [
-        {meta: 'Capital Llamado (%)', value: 98.45},
-        {meta: 'Capital por Llamar (%)', value: 1.55}
+        { meta: 'Capital Llamado (%)', value: 98.45 },
+        { meta: 'Capital por Llamar (%)', value: 1.55 }
     ]
 }, {
     startAngle: 270,
     total: 200,
-    chartPadding: 40,
+    chartPadding: 25,
     labelOffset: 75,
     labelDirection: 'explode',
-    plugins: [Chartist.plugins.tooltip()]
+    plugins: [Chartist.plugins.legend({
+        legendNames: ['Capital Llamado', 'Capital por Llamar'],
+        position: 'bottom',
+        clickable: false
+    })]
 });
-$(document).ready(function () {
+$(document).ready(function() {
     $("#range_plazos").ionRangeSlider({
         grid: true,
         grid_num: 1,
@@ -45,6 +53,6 @@ $(document).ready(function () {
         height: "20",
         targetColor: "#f1556c",
         performanceColor: "#343a40",
-        rangeColors: ['white','green', '#22f']
+        rangeColors: ['white', 'green', '#22f']
     });
 });
