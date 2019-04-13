@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>UBold - Responsive Admin Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- plugin css -->
+        <link href="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+          <!-- Chartist Chart CSS -->
+    <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                        <li class="dropdown notification-list">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+    
+                   
+    
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                                <span class="pro-user-name ml-1">
+                                    Usuario <i class="mdi mdi-chevron-down"></i> 
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">                            
+    
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="fe-user"></i>
+                                    <span>Perfil</span>
+                                </a>
+    
+                              
+    
+                              
+                                <div class="dropdown-divider"></div>
+    
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="fe-log-out"></i>
+                                    <span>Cerrar Sesión</span>
+                                </a>
+    
+                            </div>
+                        </li>
+    
+                        
+    
+                    </ul>
+    
+                    <!-- LOGO -->
+                    <div class="logo-box">
+                        <a href="index.html" class="logo text-center">
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-dark.png" alt="" height="18">
+                                <!-- <span class="logo-lg-text-light">UBold</span> -->
+                            </span>
+                            <span class="logo-sm">
+                                <!-- <span class="logo-sm-text-dark">U</span> -->
+                                <img src="assets/images/logo-sm.png" alt="" height="24">
+                            </span>
+                        </a>
+                    </div>
+    
+                    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+            
+                        <li class="dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                Inicio                               
+                            </a>
+                           
+                        </li>
+    
+                        <li class="dropdown d-none d-lg-block">
+                                <a class="nav-link dropdown-toggle waves-effect " data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    Fondos
+                                    <i class="mdi mdi-chevron-down"></i> 
+                                </a>
+                                <div class="dropdown-menu">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                                
+                                        <span>Fondo Grupo Wiese</span>
+                                    </a>
+        
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                               
+                                        <span>Fondo W Capital Retail I</span>
+                                    </a>
+        
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                               
+                                        <span>Fondo FIVIS I</span>
+                                    </a>
+        
+                                    
+                                </div>
+                            </li>
+                    </ul>
+                </div> <!-- end container-fluid-->
+            </div>
+            <!-- end Topbar -->
+
+            <div class="topbar-menu">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+                                <a href="#">
+                                  Dashboard</a>                                
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#">
+                                    Inversiones</a>                             
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#">
+                                    Documentos y Presentaciones</a>                                
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#">Información Financiera</a>                          
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#">
+                                    Diagrama Corporativo</a>                         
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- end #navigation -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end navbar-custom -->
+
+        </header>
+        <!-- End Navigation Bar-->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">
+                                        Fondo Grupo Wiese</a></li>
+                                    <li class="breadcrumb-item active">Resumen Ejecutivo del Fondo</li>
+                                </ol>
+                            </div>
+                            <h3 class="page-title">Resumen Ejecutivo del Fondo</h3>
+                        </div>
+                    </div>
+                </div>     
+                <!-- end page title --> 
+
+                <!-- end row -->
+                
+                <div class="row">            
+                    <div class="col-xl-7">
+                        <div class="card">
+                            <div class="card-body col-lg-12">                            
+                                <h4 class="header-title mb-0 text-center">
+                                    Resumen Ejecutivo del Fondo Grupo Wiese</h4>
+                                <div id="cardCollpase5" class="collapse pt-2 show">
+                                    <div class="table-responsive" style="font-size: 10px;">
+                                        <table class="table table-hover table-centered mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Cifras en USD</th>
+                                                    <th>       </th>
+                                                    <th>30/09/2018</th>                                                  
+                                                </tr>
+                                            </thead>                                           
+                                            
+                                            <tbody>
+                                                
+                                                <tr>
+                                                    <th>W Capital SAFI</th>                                                  
+                                                </tr>
+                                                <tr>
+                                                    <td>Activos Bajo Gestión</td>
+                                                    <td></td>
+                                                    <td>93,996,949</td>                                                  
+                                                </tr>
+                                                <tr>
+                                                    <td>Fondos Activos</td>
+                                                    <td></td>
+                                                    <td>10</td>                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>Empresas/Proyectos del portafolio</td>
+                                                    <td></td>
+                                                    <td>35</td>                                                   
+                                                </tr>
+                                                <tr>
+                                                    <th>Fondo Grupo Wiese</th>                                                  
+                                                </tr>
+                                                <tr>
+                                                        <td>Total de Capital Autorizado</td>
+                                                        <td></td>
+                                                        <td>500,000,000</td>                                                  
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Capital Comprometido(TBD)</td>
+                                                        <td></td>
+                                                        <td>500,000,000</td>                                                   
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Capital Invertido</td>
+                                                        <td></td>
+                                                        <td>81,084,458</td>                                                   
+                                                    </tr>
+                                                <tr>
+                                                    <td>Capital por Llamar</td>
+                                                    <td></td>
+                                                    <td>$39.99</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Capital Devuelto</td>
+                                                    <td></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Año de Inicio (Inception Year)</td>
+                                                    <td></td>
+                                                    <td>2017</td>
+                                                </tr>
+                                                <tr>
+                                                     <td>Año Vintage (Vintage Year)</td>
+                                                     <td></td>
+                                                     <td>2017</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Estructura de Capital:</th>                                                  
+                                                </tr>
+                                                <tr>
+                                                        <td>Capital</td>
+                                                        <td>58%</td>
+                                                        <td>48,747,800</td>
+                                                   </tr>
+                                                   <tr>
+                                                        <td>Deuda</td>
+                                                        <td>42%</td>
+                                                        <td>35,066,283</td>
+                                                   </tr>
+                                                <tr>
+                                                    <th>Número de Inversiones desde Inicio del Fondo</th>  
+                                                    <td></td>
+                                                    <td>8</td>                                                
+                                                </tr>    
+                                                <tr>
+                                                    <td>*Se considera deuda otorgada a Holding Plaza</td>                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th>Distribuciones Totales:</th>      
+                                                    <td></td>
+                                                    <td>-</td>                                            
+                                                </tr>
+                                                <tr>
+                                                    <td>%Capital Invertido</td>
+                                                    <td></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>%Capital Comprometido</td>
+                                                    <td></td>
+                                                    <td>0.0%</td>
+                                                </tr> 
+                                                <tr>
+                                                    <th>Principales Métricas de Valuación del Fondo:</th>                                      
+                                                </tr>
+                                                <tr>
+                                                        <td>DPI (Distribution to paid-in capital) - 
+                                                            Distribuciones Totales / Capital Pagado</td>
+                                                        <td></td>
+                                                        <td>0.00x</td>
+                                                </tr> 
+                                                <tr>
+                                                        <td>PICC (Paid in to committed capital) - 
+                                                            Capital Pagado / Capital Comprometido</td>
+                                                        <td></td>
+                                                        <td>0.10x</td>
+                                                </tr> 
+                                                <tr>
+                                                        <td>RVPI (Residual value to paid-in capital) - NAV / Capital Pagado</td>
+                                                        <td></td>
+                                                        <td>1.00x</td>
+                                                </tr>
+                                                <tr>
+                                                        <td>TVPI (Total value to paid-in capital) - RVPI + DPI</td>
+                                                        <td></td>
+                                                        <td>1.00x</td>
+                                                </tr>  
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- end table responsive-->
+                                </div> <!-- collapsed end -->                              
+                            </div> <!-- end card-body -->                        
+                        </div> <!-- end card-->                  
+                    </div> <!-- end col -->
+                    <div class="col-xl-5">
+                            <div class="card">
+                                <div class="card-body col-lg-12">
+                                    <div class="text-center" style="position: relative; height: 90%">
+                                        <h5 class="card-title mb-2"><strong>Composición del Portafolio - por País</strong></h5>
+                                        <hr class="style1 mt-0" style="border-color: red;">
+                                        <div class="mt-4 chartjs-chart">
+                                                <canvas id="pie-chart-example" height="487" class="mt-4"></canvas>
+                                            </div>
+                                      
+                                    </div>
+                                </div>
+                                <div class="card-body col-lg-12">
+                                        <div class="text-center" style="position: relative; height: 90%">
+                                            <h5 class="card-title mb-2"><strong>Composición del Portafolio - por Industria</strong></h5>
+                                            <hr class="style1 mt-0" style="border-color: red;">
+                                            <div class="mt-4 chartjs-chart">
+                                                    <canvas id="pie-chart-example2" height="487" class="mt-4"></canvas>
+                                                </div>
+                                          
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- end row -->
+                
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        2015 - 2019 &copy; UBold theme by <a href="">Coderthemes</a> 
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-md-right footer-links d-none d-sm-block">
+                            <a href="javascript:void(0);">About Us</a>
+                            <a href="javascript:void(0);">Help</a>
+                            <a href="javascript:void(0);">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end Footer -->
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div class="rightbar-title">
+                <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                    <i class="dripicons-cross noti-icon"></i>
+                </a>
+                <h5 class="m-0 text-white">Settings</h5>
+            </div>
+            <div class="slimscroll-menu rightbar-content">
+                <!-- User box -->
+                <div class="user-box">
+                    <div class="user-img">
+                        <img src="assets/images/users/user-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
+                        <a href="javascript:void(0);" class="user-edit"><i class="mdi mdi-pencil"></i></a>
+                    </div>
+            
+                    <h5><a href="javascript: void(0);">Geneva Kennedy</a> </h5>
+                    <p class="text-muted mb-0"><small>Admin Head</small></p>
+                </div>
+
+                <!-- Settings -->
+                <hr class="mt-0" />
+                <h5 class="pl-3">Basic Settings</h5>
+                <hr class="mb-0" />
+
+                <div class="p-3">
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox1" type="checkbox" checked>
+                        <label for="Rcheckbox1">
+                            Notifications
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox2" type="checkbox" checked>
+                        <label for="Rcheckbox2">
+                            API Access
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox3" type="checkbox">
+                        <label for="Rcheckbox3">
+                            Auto Updates
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox4" type="checkbox" checked>
+                        <label for="Rcheckbox4">
+                            Online Status
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-0">
+                        <input id="Rcheckbox5" type="checkbox" checked>
+                        <label for="Rcheckbox5">
+                            Auto Payout
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <hr class="mt-0" />
+                <h5 class="pl-3 pr-3">Messages <span class="float-right badge badge-pill badge-danger">25</span></h5>
+                <hr class="mb-0" />
+                <div class="p-3">
+                    <div class="inbox-widget">
+                        <div class="inbox-item">
+                            <div class="inbox-item-img"><img src="assets/images/users/user-2.jpg" class="rounded-circle" alt=""></div>
+                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
+                            <p class="inbox-item-text">I've finished it! See you so...</p>
+                        </div>
+                        <div class="inbox-item">
+                            <div class="inbox-item-img"><img src="assets/images/users/user-3.jpg" class="rounded-circle" alt=""></div>
+                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
+                            <p class="inbox-item-text">This theme is awesome!</p>
+                        </div>
+                        <div class="inbox-item">
+                            <div class="inbox-item-img"><img src="assets/images/users/user-4.jpg" class="rounded-circle" alt=""></div>
+                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
+                            <p class="inbox-item-text">Nice to meet you</p>
+                        </div>
+
+                        <div class="inbox-item">
+                            <div class="inbox-item-img"><img src="assets/images/users/user-5.jpg" class="rounded-circle" alt=""></div>
+                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
+                            <p class="inbox-item-text">Hey! there I'm available...</p>
+                        </div>
+                        <div class="inbox-item">
+                            <div class="inbox-item-img"><img src="assets/images/users/user-6.jpg" class="rounded-circle" alt=""></div>
+                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Adhamdannaway</a></p>
+                            <p class="inbox-item-text">This theme is awesome!</p>
+                        </div>
+                    </div> <!-- end inbox-widget -->
+                </div> <!-- end .p-3-->
+
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- Plugins js-->
+        <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="assets/libs/jquery-vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+          <!--Chartist Chart-->
+    <script src="assets/libs/chartist/chartist.min.js"></script>
+    <script src="assets/libs/chartist/chartist-plugin-tooltip.min.js"></script>
+    <script src="assets/libs/chart-js/Chart.bundle.min.js"></script>
+
+        <!-- Dashboard 2 init -->
+        <script src="assets/js/pages/dashboard-2.init.js"></script>
+        <script src="assets/js/pages/chartjs.init.js"></script>
+
+        <!-- App js-->
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+</html>
