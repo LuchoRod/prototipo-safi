@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>UBold - Responsive Admin Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- plugin css -->
+        <link href="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+        
+    <!-- Chartist Chart CSS -->
+    <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                        <li class="dropdown notification-list">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+    
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                                <span class="pro-user-name ml-1">
+                                    Usuario <i class="mdi mdi-chevron-down"></i> 
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            
+    
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                  
+                                    <span> Perfil</span>
+                                </a>
+    
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    
+                                    <span>Cerrar Sesión</span>
+                                </a>
+    
+                                <!-- item-->
+                              
+    
+                            </div>
+                        </li>   
+                       
+    
+                    </ul>
+    
+                <!-- LOGO -->
+                <div class="logo-box">
+                        <a href="index.html" class="logo text-center">
+                            <span class="logo-lg">
+                                    <img src="assets/images/logocapital.png" alt="" height="60">
+                                    <!-- <span class="logo-lg-text-light">UBold</span> -->
+                            </span>
+                            <span class="logo-sm">
+                                    <!-- <span class="logo-sm-text-dark">U</span> -->
+                            <img src="assets/images/logo-sm.png" alt="" height="24">
+                            </span>
+                        </a>
+                    </div>
+    
+                    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+            
+                        <li class="dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle waves-effect"  href="portal-inversionista.html" role="button" aria-haspopup="false" aria-expanded="false">
+                                Inicio                                
+                            </a>
+                        
+                        </li>
+    
+                        <li class="dropdown  d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                Fondos
+                                <i class="mdi mdi-chevron-down"></i> 
+                            </a>
+                            <div class="dropdown-menu">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                                
+                                        <span>Fondo Grupo Wiese</span>
+                                    </a>
+        
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                               
+                                        <span>Fondo W Capital Retail I</span>
+                                    </a>
+        
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                               
+                                        <span>Fondo FIVIS I</span>
+                                    </a>
+        
+                                    
+                                </div>
+                         
+                        </li>
+                    </ul>
+                </div> <!-- end container-fluid-->
+            </div>
+            <!-- end Topbar -->
+
+            <div class="topbar-menu">
+                    <div class="container-fluid">
+                        <div id="navigation">
+                        <ul class="navigation-menu" >
+                            <li class="dropdown d-none d-lg-block">
+                                <a class="nav-link waves-effect" href="fondo-grupo-wiese.html" role="button" aria-haspopup="false" aria-expanded="false">
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="dropdown d-none d-lg-block">
+                                    <a class="nav-link waves-effect " href="fondo-inversiones.html" role="button" aria-haspopup="false" aria-expanded="false">
+                                        Inversiones
+                                    </a>
+                                </li>
+                                <li class="dropdown d-none d-lg-block">
+                                        <a class="nav-link waves-effect  " href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                           Documentos y Presentaciones
+                                        </a>
+                                    </li>
+                            <li class="dropdown d-none d-lg-block">
+                                <a class="nav-link waves-effect " href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    Información Financiera
+                                </a>
+                            </li>
+                            <li class="dropdown d-none d-lg-block">
+                                <a class="nav-link waves-effect" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    Diagrama Corporativo
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                    </div>
+            <!-- end navbar-custom -->
+
+        </header>
+        <!-- End Navigation Bar-->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="wrapper">
+            <div class="container-fluid">
+               <div class="row">
+                <h3 class="col-lg-3">Fondo Grupo Wiese</h3>
+                <h5 class="col-lg-8 my-2 text-md-right">Reporte Portafolio de Inversiones</h5>
+               </div>
+              <div class="row">                 
+                <div class="col-md-8 col-lg-8">
+                    <div class="card">
+                        <div class="card-body text-center">
+                        <h4 class="header-title mb-2"><strong>TIR Bruta</strong></h4>
+                        <hr class="my-1" style="border-color: red;">
+                        <div class="row">
+                        <div class="mt-4 col-lg-6 text-center">
+                            <h5>Portafolio</h5>
+                            <div class="sparkline2" class="text-center"></div>
+                        </div>
+                        
+                        <div class="mt-4 col-lg-6 text-center">
+                            <h5>Partícipe</h5>
+                            <div class="sparkline2" class="text-center"></div>
+                        </div>
+                        </div>
+                        </div>
+                    </div> <!-- end card-box -->
+                    <div class="card">
+                            <div class="card-body text-center">
+                            <h4 class="header-title mb-2"><strong>Múltiplo</strong></h4>
+                            <hr class="my-1" style="border-color: red;">
+                            <div class="row">
+                            <div class="mt-4 col-lg-6 text-center">
+                                <h5>Portafolio</h5>
+                                <div class="sparkline2" class="text-center"></div>
+                            </div>
+                            
+                            <div class="mt-4 col-lg-6 text-center">
+                                <h5>Partícipe</h5>
+                                <div class="sparkline2" class="text-center"></div>
+                            </div>
+                            </div>
+                            </div>
+                        </div> <!-- end card-box -->
+                </div> <!-- end col -->
+                <div class="col-md-4 col-lg-4"> 
+                        <!-- Simple card -->
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-2"><strong>Empresas</strong></h5>
+                                <hr class="style1 mt-0" style="border-color: red;">
+                                <h1 class="mb-3 mt-4"><span data-plugin="counterup">11</span></h1>
+                            </div>
+                        </div>
+                       
+                                <!-- Simple card -->
+                                <div class="card">
+                                    <div class="card-body text-center" style="position: relative;">
+                                        <h5 class="card-title mb-2"><strong>Participación por Proyecto</strong></h5>
+                                        <hr class="style1 mt-0" style="border-color: red;">
+                                        <div class="mt-4 chartjs-chart">
+                                                <canvas id="pie-chart-example2" height="352" class="mt-4"></canvas>
+                                            </div>
+                                      
+                                    </div>
+                                </div>     
+                </div>
+                <div class=" col-lg-12"> 
+                        <!-- Simple card -->
+                        <div class="card row">                        
+                            <div class="card-body col-lg-12 row" style="margin:auto"  >
+                               <a href="compañía- n.html"><span class="col-lg-2">
+                                   <img src="assets/images/ImagenesExcel/Comunal.png" height="165">
+                               </span>
+                               </a>
+                               <a><span class="col-lg-2">
+                                    <img src="assets/images/ImagenesExcel/Civitano.png" height="165">
+                                </span>
+                                </a>
+                                <a><span class="col-lg-2">
+                                        <img src="assets/images/ImagenesExcel/Juntoz.png" height="165">
+                                    </span>
+                                </a>
+                                <a><span class="col-lg-2">
+                                        <img src="assets/images/ImagenesExcel/Frialsa.png" height="165">
+                                    </span>
+                                </a>
+                                <a><span class="col-lg-2">
+                                        <img src="assets/images/ImagenesExcel/Hiro-Sake.png" height="150">
+                                    </span>
+                                </a>   
+                                <a style="padding-top:3%; padding-left:3%"><span class="col-lg-2" >
+                                       <h3 class="text-center">Metroport</h3>
+                                    </span>
+                                </a>  
+                            </div>                                              
+                        </div> 
+                </div>
+                   
+              </div>
+              <!-- end row -->
+                
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+         <!-- Moment js -->
+    <script src="assets/libs/moment/moment.min.js"></script>
+
+         <!--Chartist Chart-->
+    <script src="assets/libs/chartist/chartist.min.js"></script>
+    <script src="assets/libs/chartist/chartist-plugin-tooltip.min.js"></script>
+    <script src="assets/libs/chart-js/Chart.bundle.min.js"></script>
+        <!-- Plugins js-->
+        <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="assets/libs/jquery-vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+        <!-- Dashboard 2 init -->
+        <script src="assets/js/pages/dashboard-2.init.js"></script>
+        <script src="assets/js/pages/chartjs.init.js"></script>
+        <script src="assets/js/pages/sparkline.init.js"></script>
+
+        <!-- App js-->
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+</html>

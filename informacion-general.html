@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>UBold - Responsive Admin Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- plugin css -->
+        <link href="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+        
+    <!-- Chartist Chart CSS -->
+    <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                        <li class="dropdown notification-list">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+    
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                                <span class="pro-user-name ml-1">
+                                    Usuario <i class="mdi mdi-chevron-down"></i> 
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            
+    
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                  
+                                    <span> Perfil</span>
+                                </a>
+    
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    
+                                    <span>Cerrar Sesión</span>
+                                </a>
+    
+                                <!-- item-->
+                              
+    
+                            </div>
+                        </li>   
+                       
+    
+                    </ul>
+    
+                <!-- LOGO -->
+                <div class="logo-box">
+                        <a href="index.html" class="logo text-center">
+                            <span class="logo-lg">
+                                    <img src="assets/images/logocapital.png" alt="" height="60">
+                                    <!-- <span class="logo-lg-text-light">UBold</span> -->
+                            </span>
+                            <span class="logo-sm">
+                                    <!-- <span class="logo-sm-text-dark">U</span> -->
+                            <img src="assets/images/logo-sm.png" alt="" height="24">
+                            </span>
+                        </a>
+                    </div>
+    
+                    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+            
+                        <li class="dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle waves-effect"  href="portal-inversionista.html" role="button" aria-haspopup="false" aria-expanded="false">
+                                Inicio                                
+                            </a>
+                        
+                        </li>
+    
+                        <li class="dropdown  d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                Fondos
+                                <i class="mdi mdi-chevron-down"></i> 
+                            </a>
+                            <div class="dropdown-menu">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                                
+                                        <span>Fondo Grupo Wiese</span>
+                                    </a>
+        
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                               
+                                        <span>Fondo W Capital Retail I</span>
+                                    </a>
+        
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                               
+                                        <span>Fondo FIVIS I</span>
+                                    </a>
+        
+                                    
+                                </div>
+                         
+                        </li>
+                    </ul>
+                </div> <!-- end container-fluid-->
+            </div>
+            <!-- end Topbar -->
+
+            <div class="topbar-menu">
+                    <div class="container-fluid">
+                        <div id="navigation">
+                        <ul class="navigation-menu" >
+                            <li class="dropdown d-none d-lg-block">
+                                <a class="nav-link waves-effect" href="fondo-grupo-wiese.html" role="button" aria-haspopup="false" aria-expanded="false">
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="dropdown d-none d-lg-block">
+                                    <a class="nav-link waves-effect " href="fondo-inversiones.html" role="button" aria-haspopup="false" aria-expanded="false">
+                                        Inversiones
+                                    </a>
+                                </li>
+                                <li class="dropdown d-none d-lg-block">
+                                        <a class="nav-link waves-effect  " href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                           Documentos y Presentaciones
+                                        </a>
+                                    </li>
+                            <li class="dropdown d-none d-lg-block">
+                                <a class="nav-link waves-effect " href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    Información Financiera
+                                </a>
+                            </li>
+                            <li class="dropdown d-none d-lg-block">
+                                <a class="nav-link waves-effect" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    Diagrama Corporativo
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                    </div>
+            <!-- end navbar-custom -->
+
+        </header>
+        <!-- End Navigation Bar-->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="wrapper">
+            <div class="container-fluid">
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="fondo-grupo-wiese.html">Fondo Grupo Wiese</a></li>
+                                    <li class="breadcrumb-item"><a href="compañía- n.html">Compañía N</a></li>
+                                    <li class="breadcrumb-item active">Información General</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Información General</h4>
+                        </div>
+                    </div>
+                </div>     
+                <!-- end page title --> 
+              <div class="row">                 
+                <div class="col-md-12 ">
+                    <div class="card">
+                        <div class="card-body text-left col-lg-12" style="padding-left: 8%;padding-right:8%">
+                                <h4 class="header-title mb-2" style="color:white; background-color: darkblue">
+                                        <strong>COMUNAL COWORKING</strong></h4>
+                                    <hr class="my-1" style="border-color: black;">
+                                <h5>Información General (En USD)</h5>    
+                                <hr class="my-1" style="border-color: black;">
+                                <div class="row" style="border-color:black">
+                                        <div class="col-md-3">
+                                                <div class="mt-2">
+                                                    <p><b>Fecha de Inversion (1° Aporte)</b></p>
+                                                    <p><b>Industria</b></p>
+                                                    <p><b>Sede Corporativa</b></p>
+                                                   
+                                                </div>
+            
+                                            </div><!-- end col -->
+
+                                            
+                                            <div class="col-md-1 ">
+                                                    <div class="mt-2">
+                                                            <p class="text-muted">02/28/2018</p>
+                                                            <p class="text-muted">Coworking</p>
+                                                            <p class="text-muted">Lima, Peru</p>
+                                                    </div>
+                                                </div><!-- end col --> 
+                                            <div class="col-md-3 ">
+                                                    <div class="mt-2">
+                                                            <p><b>Participación de FondoGW* </b></p>
+                                                            <p><b>Rol FondoGW (Lead/co-Lead)</b></p>
+                                                            <p><b>Miembros Directorio:</b></p>
+                                                            <p class="text-muted">Por definir</p>
+                                                    </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-1">
+                                                    <div class="mt-2">
+                                                            <p class="text-muted">28.33%</p>
+                                                            <p class="text-muted">Lead</p>
+                                                            
+                                                    </div>
+                                                </div><!-- end col -->   
+                                                <div class="col-md-3">
+                                                        <div class="mt-2">
+                                                            <p><b>Inversiones Comprometidas</b></p>
+                                                            <p><b>Capital Invertido</b></p>
+                                                            <p><b>Disitribuciones</b></p>
+                                                            <p><b>Valor actual de la Inversion*</b></p>
+                                                            <p><b>Valor inicial en la entrada</b></p>
+                                                            <p><b>TIR accionista</b></p>
+                                                            <p><b>Etapa de la Inversión</b></p>
+                                                        </div>
+                    
+                                                    </div><!-- end col -->   
+                                                    <div class="col-md-1">
+                                                            <div class="mt-3">
+                                                                    <p class="text-muted">no definido</p>
+                                                                    <p class="text-muted">1,500,000</p>
+                                                                    <p class="text-muted">0</p>
+                                                                    <p class="text-muted">1,499,091</p>
+                                                                    <p class="text-muted">1,500,000</p>
+                                                                    <p class="text-muted">64%</p>
+                                                                    <p class="text-muted">Expansión</p>
+                                                            </div>
+                                                        </div><!-- end col -->          
+                                                                                             
+                                </div>
+                                
+                                <h5>Descripción del Negocio</h5>    
+                                <hr class="my-1" style="border-color: black;">
+
+
+                                <div class="row" style="border-color:black">
+                                        <div class="col-md-12">
+                                                <div class="mt-2">
+                                                   <p>Compañía de gestión de espacios de coworking para cliente desde corporativos hasta
+                                                        emprendedores. El portafolio de productos está comprendido por oficinas privadas,
+                                                         escritorios dedicados y sala de reuniones. Se espera ampliar el portafolio en los
+                                                          siguientes periodos. A la fecha cuenta con 5 sedes: Miraflores(2), Barranco (2) 
+                                                          y San Isidro. Asimismo, se espera cuente con 11 al cierre de 2018.</p>
+                                                   
+                                                </div>
+            
+                                            </div><!-- end col -->
+
+                                                
+                                                                                             
+                                </div>     
+                                <h5>Tesis de Inversión</h5>    
+                                <hr class="my-1" style="border-color: black;">
+
+
+                                <div class="row" style="border-color:black">
+                                        <div class="col-md-12">
+                                                <div class="mt-2">
+                                                   <p><b>I. Oferta de valor diferenciada: </b>Alquiler de oficinas compartidas en ubicaciones en zonas 
+                                                       estratégicas, propuesta de valor económica, la experiencia del usuario en Comunal se basa en 
+                                                       el sentido de comunidad, oportunidades de networking y ambiente innovador.
+                                                        <b>II. Equipo gerencial experimentado:</b> Management de primer nivel con amplia experiencia.
+                                                         Gestión enfocada en lo operacional y bajo concepto high-end hotel con énfasis en un
+                                                          servicio sobresaliente y atención en la utilización del espacio.
+                                                         </p>
+                                                   
+                                                </div>
+            
+                                            </div><!-- end col -->
+
+                                                
+                                                                                             
+                                </div>  
+                                 
+                                
+
+
+                                <div class="row">
+                                        <div class="col-md-4">
+                                                <h5 width="100">Estructura de la Inversión</h5>    
+                                                <div class="table-responsive">
+                                                        <table class="table mt-4 table-centered">
+                                                            <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>#</th>
+                                                                <th>Monto($)</th>
+                                                             
+                                                            </tr></thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>Préstamo Convertible</td>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                                <td>1,500,000</td>
+                                                                
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>Total</b></td>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                                <td><b>1,500,000</b></td>
+                                                               
+                                                            </tr>
+                
+                                                            </tbody>
+                                                        </table>
+                                                    </div> <!-- end table-responsive -->
+            
+                                            </div><!-- end col -->                                                
+                                                                                             
+                                      
+                                   
+                               
+
+                                
+                                        <div class="col-md-8 float-right" style="padding-left: 20%">
+                                                <h5 width="100">Resultados Financieros (en USD)</h5> 
+                                                <div class="table-responsive">
+                                                        <table class="table mt-2 table-centered">
+                                                            <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>2016</th>
+                                                                <th>2017</th>
+                                                                <th>sep-18 YTD</th>
+                                                            </tr>
+                                                        </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>Ingresos</td>
+                                                                <td>
+                                                                    753,546
+                                                                </td>
+                                                                <td>1,851,038</td>
+                                                                <td>1,238,485</td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td>Crec. YoY</td>
+                                                                    <td>
+                                                                        n.a
+                                                                    </td>
+                                                                    <td>146%</td>
+                                                                    <td>47%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td>Utilidad Op.</td>
+                                                                    <td>
+                                                                        -51,547
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td>127,315</td>
+                                                            </tr> 
+                                                            <tr>
+                                                                    <td>Crec. YoY</td>
+                                                                    <td>
+                                                                        n.a
+                                                                    </td>
+                                                                    <td>n.a</td>
+                                                                    <td>n.a</td>
+                                                            </tr>   
+                                                            <tr>
+                                                                    <td>Mg. Bruto</td>
+                                                                    <td>
+                                                                        -37%
+                                                                    </td>
+                                                                    <td>-39%</td>
+                                                                    <td>10%</td>
+                                                                </tr>        
+                
+                                                            </tbody>
+                                                        </table>
+                                                       <div> 
+                                                        <table class="table mt-2 table-centered">
+                                                                <thead>
+                                                                        <tr>
+                                                                            <th>TC</th>
+                                                                            <th>3.352</th>
+                                                                            <th>3.238</th>
+                                                                            <th>3.25</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                        </table>
+                                                    </div>
+                                                    </div> <!-- end table-responsive -->
+            
+                                            </div><!-- end col -->    
+                                                
+                                                                                             
+                                        </div>   
+                        </div>
+                    </div> <!-- end card-box -->
+                  
+                </div> <!-- end col -->
+              
+                
+
+              </div>
+              <!-- end row -->
+                
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+         <!-- Moment js -->
+    <script src="assets/libs/moment/moment.min.js"></script>
+
+     
+        <!-- Plugins js-->
+        <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="assets/libs/jquery-vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+        <!-- Dashboard 2 init -->
+        <script src="assets/js/pages/dashboard-2.init.js"></script>
+        
+        <!-- App js-->
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+</html>
