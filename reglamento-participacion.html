@@ -14,8 +14,8 @@
         <link href="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
 
         
-    <!-- Chartist Chart CSS -->
-    <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
+        <!-- Chartist Chart CSS -->
+        <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -144,10 +144,18 @@
                                         Inversiones
                                     </a>
                                 </li>
-                                <li class="dropdown d-none d-lg-block">
-                                        <a class="nav-link waves-effect  " href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                           Documentos y Presentaciones
+                                <li class="dropdown  d-none d-lg-block">
+                                        <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                           Documentos y Presentaciones 
+                                           <i class="mdi mdi-chevron-down"></i>                                       
                                         </a>
+                                        <div class="dropdown-menu">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">                                
+                                                    <span>Reglamento de Participación</span>
+                                                </a>              
+                                                
+                                            </div>
                                     </li>
                             <li class="dropdown d-none d-lg-block">
                                 <a class="nav-link waves-effect " href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -174,62 +182,42 @@
 
         <div class="wrapper">
             <div class="container-fluid">
-               <div class="row">
-                <span class="col-lg-1 my-1"><img src="assets/images/ImagenesExcel/Comunal.png"></span>   
-                <h3 class="col-lg-3 my-5 text-center">Compañía N</h3>
-                <h5 class="col-lg-7 my-5 text-md-right"><a href="fondo-grupo-wiese.html"><span>Fondo Grupo wiese</span></a> >
-                Compañía N</h5>
-               </div>
+                <!-- start page title -->
+                <div class="row">
+                        <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item">
+                                                <a href="fondo-grupo-wiese.html">
+                                                    Fondo Grupo Wiese</a></li> 
+                                                <li class="breadcrumb-item">
+                                                        <a href="documentos-y-presentaciones.html">
+                                                            Documentos y Presentaciones</a></li> 
+                                                            <li class="breadcrumb-item">
+                                                                    <a href="#">
+                                                                        Reglamento de Participación</a></li>                               
+                                                                                        
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Reglamento de Participación</h4>
+                                </div>
+                            </div>
+                   </div>
+                <!-- end page title --> 
               <div class="row">                 
-                <div class="col-md-4">
-                  
-                    <div class="card">
-                        <div class="card-body text-center">
-                                <a href="#"><span>
-                                    <img src="assets/images/company-1.png" alt="" height="150"></span></a>
-                        </div>
-                    </div> <!-- end card-box -->                  
-                </div> <!-- end col -->
-                <div class="col-md-4">
-                        <div class="card ">
-                                <div class="card-body text-center">
-                               <a href="#"><span>
-                                   <img src="assets/images/company-2.png" alt="" height="150"></span></a>
+                
+                    <div class="col-xl-12 my-2">
+                            <div class="card">
+                                <div class="card-body text-center ">
+                                    <img src="assets/images/pdf-file.png" height="900" width="1100"> 
                                 </div>
-                        </div> <!-- end card-box -->   
-                </div>
-                <div class="col-md-4">
-                        <div class="card ">
-                                <div class="card-body text-center">
-                                        <a href="#"><span>
-                                            <img src="assets/images/company-3.png" alt="" height="150"></span></a>
-                                </div>
-                        </div> <!-- end card-box -->   
-                </div>
-                <div class="col-md-4">
-                        <div class="card ">
-                                <div class="card-body text-center">
-                                        <a href="#"><span>
-                                            <img src="assets/images/company-4.png" alt="" height="150"></span></a>
-                                </div>
-                    </div> <!-- end card-box -->  
-                </div>
-                <div class="col-md-4">
-                        <div class="card">
-                                <div class="card-body text-center">
-                                        <a href="#"><span>
-                                            <img src="assets/images/company-5.png" alt="" height="150"></span></a>
-                                </div>
-                    </div> <!-- end card-box -->    
-                </div>
-                <div class="col-md-4">
-                        <div class="card">
-                                <div class="card-body text-center">
-                                        <a href="#"><span>
-                                            <img src="assets/images/company-6.png" alt="" height="150"></span></a>
-                                </div>
-                    </div> <!-- end card-box -->   
-                </div>     
+
+                            </div>
+                        </div> <!-- end col -->
+                    
+                                     
+                </div> <!-- end col -->  
               </div>
               <!-- end row -->
                 
@@ -253,14 +241,15 @@
          <!-- Moment js -->
     <script src="assets/libs/moment/moment.min.js"></script>
 
-    <!-- Plugins js-->
-   
+     
+        <!-- Plugins js-->
+        <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
         <script src="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.min.js"></script>
         <script src="assets/libs/jquery-vectormap/jquery-jvectormap-world-mill-en.js"></script>
 
         <!-- Dashboard 2 init -->
         <script src="assets/js/pages/dashboard-2.init.js"></script>
-
+        
         <!-- App js-->
         <script src="assets/js/app.min.js"></script>
         
