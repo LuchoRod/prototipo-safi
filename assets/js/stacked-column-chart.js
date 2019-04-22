@@ -127,6 +127,8 @@ var chartW = new CanvasJS.Chart("chartContainer", {
 ]
 });
 
+
+
 var chartW2 = new CanvasJS.Chart("chartContainer2", {
     theme: "light1", // "light1", "ligh2", "dark1", "dark2"
     animationEnabled: true,
@@ -158,9 +160,13 @@ var chartW2 = new CanvasJS.Chart("chartContainer2", {
     },
 ]
 });
-chartW.render();
+
+
 chart.render();
+chartW.render();
 chartW2.render();
+
+
 
 function toolTipContent(e) {
 	var str = "";

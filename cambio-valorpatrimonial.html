@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>UBold - Responsive Admin Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+          <!-- plugin css -->
+        <link href="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        
+        <!-- Chartist Chart CSS -->
+        <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                        <li class="dropdown notification-list">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+    
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                                <span class="pro-user-name ml-1">
+                                    Usuario <i class="mdi mdi-chevron-down"></i> 
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            
+    
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                  
+                                    <span> Perfil</span>
+                                </a>
+    
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    
+                                    <span>Cerrar Sesión</span>
+                                </a>
+    
+                                <!-- item-->
+                              
+    
+                            </div>
+                        </li>   
+                       
+    
+                    </ul>
+    
+                <!-- LOGO -->
+                <div class="logo-box">
+                        <a href="index.html" class="logo text-center">
+                            <span class="logo-lg">
+                                    <img src="assets/images/logocapital.png" alt="" height="60">
+                                    <!-- <span class="logo-lg-text-light">UBold</span> -->
+                            </span>
+                            <span class="logo-sm">
+                                    <!-- <span class="logo-sm-text-dark">U</span> -->
+                            <img src="assets/images/logo-sm.png" alt="" height="24">
+                            </span>
+                        </a>
+                    </div>
+    
+                    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+            
+                        <li class="dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle waves-effect"  href="portal-inversionista.html" role="button" aria-haspopup="false" aria-expanded="false">
+                                Inicio                                
+                            </a>
+                        
+                        </li>
+    
+                        <li class="dropdown  d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                Fondos
+                                <i class="mdi mdi-chevron-down"></i> 
+                            </a>
+                            <div class="dropdown-menu">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                                
+                                        <span>Fondo Grupo Wiese</span>
+                                    </a>
+        
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                               
+                                        <span>Fondo W Capital Retail I</span>
+                                    </a>
+        
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">                               
+                                        <span>Fondo FIVIS I</span>
+                                    </a>
+        
+                                    
+                                </div>
+                         
+                        </li>
+                    </ul>
+                </div> <!-- end container-fluid-->
+            </div>
+            <!-- end Topbar -->
+
+            <div class="topbar-menu">
+                    <div class="container-fluid">
+                        <div id="navigation">
+                        <ul class="navigation-menu" >
+                            <li class="dropdown d-none d-lg-block">
+                                <a class="nav-link waves-effect" href="fondo-grupo-wiese.html" role="button" aria-haspopup="false" aria-expanded="false">
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="dropdown d-none d-lg-block">
+                                    <a class="nav-link waves-effect " href="fondo-inversiones.html" role="button" aria-haspopup="false" aria-expanded="false">
+                                        Inversiones
+                                    </a>
+                                </li>
+                                <li class="dropdown  d-none d-lg-block">
+                                        <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                           Documentos y Presentaciones 
+                                           <i class="mdi mdi-chevron-down"></i>                                       
+                                        </a>
+                                        <div class="dropdown-menu">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">                                
+                                                    <span>Reglamento de Participación</span>
+                                                </a>              
+                                                
+                                            </div>
+                                    </li>
+                            <li class="dropdown d-none d-lg-block">
+                                <a class="nav-link waves-effect " href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    Información Financiera
+                                </a>
+                            </li>
+                            <li class="dropdown d-none d-lg-block">
+                                <a class="nav-link waves-effect" href="diagrama-corporativo.html" role="button" aria-haspopup="false" aria-expanded="false">
+                                    Diagrama Corporativo
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                    </div>
+            <!-- end navbar-custom -->
+
+        </header>
+        <!-- End Navigation Bar-->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="wrapper">
+            <div class="container-fluid">
+                <!-- start page title -->
+                <div class="row">
+                        <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item">
+                                                <a href="fondo-grupo-wiese.html">
+                                                    Fondo Grupo Wiese</a></li> 
+                                                <li class="breadcrumb-item">
+                                                        <a href="informacion-financiera.html">
+                                                            Información Financiera</a></li> 
+                                                            <li class="breadcrumb-item">
+                                                                    <a href="#">
+                                                                        Cambio en el valor patrimonial</a></li>                               
+                                                                                        
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Cambio en el Valor Patrimonial</h4>
+                                </div>
+                            </div>
+                   </div>
+                <!-- end page title --> 
+            
+                <div class="row">
+                        <div class="col-lg-12 card-box">
+                        
+                                <div id="cardCollpase5" class="collapse pt-2 show text-center">
+                                        <div class="table-responsive" style="font-size: 10px;">
+                              <table class="table table-hover table-centered mb-0">
+                                  <thead>
+                                    <col>
+                                    <colgroup span="4"></colgroup>
+                                 <tr style="background-color:darkblue; color:white">
+                                     <th colspan="14">Fondo Grupo Wiese</th>
+                                 </tr>
+                                 <tr>
+                                        <td  class="float-left">en USD</td>
+                                    </tr>
+                                    <tr>
+                                            <td  class="float-left">Jun-18</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th scope="col">Acumulado Trimestral</th>
+                                        <th scope="col">Acumulado Anual</th>
+                                        <th scope="col">Desde incepción</th>
+                                        <th scope="col">Acumulado Trimestral</th>
+                                        <th scope="col">Acumulado Anual</th>
+                                        <th scope="col">
+                                                Desde incepción                                              
+                                        </th>   
+                                        
+                                    </tr>
+                                    <tr>
+                                          
+                                            <th></th>
+                                            <th colspan="3" scope="colgroup">
+                                                <b>Gonzalo Antonio de la Puente Wiese</b></th>
+                                            <th colspan="3" scope="colgroup">
+                                                <b>Fondo Grupo Wiese</b></th>
+                                         
+                                    </tr>   
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color:lightgray">
+                                        <td>Valor Patrimonial al inicio del periodo</td>
+                                        <td>4,621,741</td>
+                                        <td>4,594,200</td>
+                                        <td>-</td>
+                                        <td>46,217,406</td>
+                                        <td>45,942,000</td>
+                                        <td>-</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                            <td>Contribuciones</td>
+                                            <td>-</td>
+                                            <td>-</td>                                         
+                                            <td>4,749,523</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>47,495,231</td>
+                                            
+                                    </tr>
+                                    <tr>
+                                            <td>Distribuciones</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                    </tr>  
+                                    <tr>
+                                            <td><b>Ingresos</b></td>
+                                            <td><b>60,280</b></td>
+                                            <td><b>112,006</b></td>
+                                            <td><b>126,226</b></td>
+                                            <td><b>602,798</b></td>
+                                            <td><b>1,120,061</b></td>
+                                            <td><b>1,262,258</b></td>
+                                           
+                                    </tr> 
+                                    <tr>
+                                            <td>- Ingresos por intereses</td>
+                                            <td>60,280</td>
+                                            <td>112,006</td>
+                                            <td>121,049</td>
+                                            <td>602,798</td>
+                                            <td>1,120,061</td>
+                                            <td>1,210,489</td>
+                                            
+                                    </tr>
+                                    <tr>
+                                            <td>- Otros Ingresos</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>51,768</td>
+                                           
+                                    </tr>
+                                    <tr>
+                                            <td><b>Gastos Administrativos</b></td>
+                                            <td><b>-23,862</b></td>
+                                            <td><b>-26,690</b></td>
+                                            <td><b>-180,546</b></td>
+                                            <td><b>-238,619</b></td>
+                                            <td><b>-266,901</b></td>
+                                            <td><b>-1,805,462</b></td>
+                                    </tr>  
+                                    <tr>
+                                            <td>- Honorarios-Legales</td>
+                                            <td>-</td>
+                                            <td>-1,594</td>
+                                            <td>-9,379</td>
+                                            <td>-</td>
+                                            <td>-15,936</td>
+                                            <td>-93,788</td>
+                                    </tr> 
+                                    <tr>
+                                            <td>- Asesorías-Consultorías</td>
+                                            <td>-542</td>
+                                            <td>-1,541</td>
+                                            <td>-4,269</td>
+                                            <td>-5,425</td>
+                                            <td>-15,413</td>
+                                            <td>-42,690</td>
+                                    </tr> 
+                                    <tr>
+                                            <td>- Gastos notariales y de registros</td>
+                                            <td>-15</td>
+                                            <td>-17</td>
+                                            <td>-33</td>
+                                            <td>-153</td>
+                                            <td>-174</td>
+                                            <td>-327</td>
+                                    </tr> 
+                                    <tr>
+                                            <td>- Servicios auditoría y contable</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-1,067</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-10,671</td>
+                                    </tr>   
+                                    <tr>
+                                            <td>- Comisión Administración del Fondo</td>
+                                            <td>-23,092</td>
+                                            <td>-23,092</td>
+                                            <td>-163,949</td>
+                                            <td>-230,916</td>
+                                            <td>-230,916</td>
+                                            <td>-1,639,492</td>
+                                    </tr>    
+                                    <tr>
+                                            <td>- Remuneración de directorio</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                    </tr>     
+                                    <tr>
+                                            <td>- Gastos de viajes</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-505</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-5,050</td>
+                                    </tr>   
+                                    <tr>
+                                            <td>- Suscripciones, Cavali</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-3,567</td>
+                                    </tr>    
+                                    <tr>
+                                            <td>- Gastos de representación</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                    </tr>   
+                                    <tr>
+                                            <td>- Gastos bancarios e I.T.F.</td>
+                                            <td>-</td>
+                                            <td>-446</td>
+                                            <td>-</td>
+                                            <td>-2,125</td>
+                                            <td>-4,462</td>
+                                            <td>-9,563</td>
+                                    </tr>   
+                                    <tr>
+                                            <td>- Servicio de impresiones y empastes</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                    </tr>     
+                                    <tr>
+                                            <td>- Gastos Extraordinarios( Retenc. No Domic.)</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                    </tr>  
+                                    <tr>
+                                            <td>- IGV</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                    </tr>    
+                                    <tr>
+                                            <td>- Otros diversos</td>
+                                            <td>-</td>
+                                            <td>-0</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-1</td>
+                                            <td>-315</td>
+                                    </tr>    
+                                    <tr class="text-dark"> 
+                                            <td>Gastos Financieros</td>
+                                            <td>-58,869</td>
+                                            <td>-67,394</td>
+                                            <td>-85,142.13</td>
+                                            <td>-588,687</td>
+                                            <td>-673,943</td>
+                                            <td>-851,421</td>
+                                    </tr>        
+                                    <tr>
+                                            <td>- Intereses de pagaré</td>
+                                            <td>-22,258</td>
+                                            <td>-30,783</td>
+                                            <td>-48,531</td>
+                                            <td>-222,579</td>
+                                            <td>-307,834</td>
+                                            <td>-485,313</td>
+                                    </tr>  
+                                    <tr>
+                                            <td>- Intereses de mutuo</td>
+                                            <td>-2,078</td>
+                                            <td>-2,078</td>
+                                            <td>-2,078.17</td>
+                                            <td>-20,782</td>
+                                            <td>-20,782</td>
+                                            <td>-20,782</td>
+                                    </tr>   
+                                    <tr>
+                                            <td>- Renovación de pagaré</td>
+                                            <td>-34,533</td>
+                                            <td>-34,533</td>
+                                            <td>-34,533</td>
+                                            <td>-345,327</td>
+                                            <td>-345,327</td>
+                                            <td>-345,327</td>
+                                    </tr>      
+                                    <tr>
+                                            <td>Diferencia en cambio</td>
+                                            <td>22,719</td>
+                                            <td>9,887</td>
+                                            <td>11,948</td>
+                                            <td>227,187</td>
+                                            <td>98,866</td>
+                                            <td>119,479</td>
+                                    </tr>      
+                                    <tr class="text-dark" style="background-color: lightgray">
+                                            <td>Valor Patrimonial al fin del periodo</td>
+                                            <td>4,622,088</td>
+                                            <td>4,622,008</td>
+                                            <td>4,622,008</td>
+                                            <td>46,220,084</td>
+                                            <td>46,220,084</td>
+                                            <td>46,220,084s</td>
+                                    </tr>                                                                                                  
+                                </tbody>
+                                
+                              </table>
+                              </div>
+                              </div>
+                 
+                        </div>
+                      </div>
+                                               
+                                       
+                             
+              </div>
+              <!-- end row -->
+                
+            </div> <!-- end container -->
+        <!-- end wrapper -->
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- Moment js -->
+    <script src="assets/libs/moment/moment.min.js"></script>
+
+
+    
+
+        <!-- Dashboard 2 init -->
+        <script src="assets/js/pages/dashboard-3.init.js"></script>
+        
+        <!-- App js-->
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+</html>

@@ -19,7 +19,7 @@ new Chartist.Pie("#gauge-capital-total", {
         clickable: false
     })]
 }), new Chartist.Pie("#gauge-capital-participe", {
-    labels: ['S/. 984,492 (98.45%)', 'S/. 15,508 (1.55%)'],
+    labels: [''],
     series: [
         { meta: 'Capital Llamado (%)', value: 98.45 },
         { meta: 'Capital por Llamar (%)', value: 1.55 }
