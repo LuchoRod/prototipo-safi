@@ -106,7 +106,7 @@
                                 Fondos
                                 <i class="mdi mdi-chevron-down"></i> 
                             </a>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu topbar-menu">
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item">                                
                                         <span>Fondo Grupo Wiese</span>
@@ -132,9 +132,10 @@
             <!-- end Topbar -->
 
             <div class="topbar-menu">
+                    <div class="navbar-custom">
                     <div class="container-fluid">
                         <div id="navigation">
-                        <ul class="navigation-menu" >
+                        <ul class="list-unstyled topnav-menu topnav-menu-left m-0" >
                             <li class="dropdown d-none d-lg-block">
                                 <a class="nav-link waves-effect" href="fivis-1.html" role="button" aria-haspopup="false" aria-expanded="false">
                                     Dashboard
@@ -174,21 +175,22 @@
                                             </div>    
                                     </li>
                             <li class="dropdown d-none d-lg-block">
-                                <a class="nav-link waves-effect " href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <a class="nav-link waves-effect " href="informacion-financierainmobiliario.html" role="button" aria-haspopup="false" aria-expanded="false">
                                     Información Financiera
                                 </a>
                             </li>
                             <li class="dropdown d-none d-lg-block">
-                                <a class="nav-link waves-effect" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <a class="nav-link waves-effect" href="documentospresentaciones-inmobiliaria.html" role="button" aria-haspopup="false" aria-expanded="false">
                                     Documentos y Presentaciones
                                 </a>
                             </li>
                             <li class="dropdown d-none d-lg-block">
-                                    <a class="nav-link waves-effect" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <a class="nav-link waves-effect" href="reglamentoparticipacion-inmobiliaria.html" role="button" aria-haspopup="false" aria-expanded="false">
                                         Reglamento de Participación
                                     </a>
                             </li>   
                         </ul>
+                    </div>
                     </div>
                     </div>
                     </div>
@@ -207,29 +209,29 @@
               
               <div class="row">                 
                 
-                    <div class="col-xl-2 my-2">
-                            <div class="card" style="height:90%">
+                    <div class="col-xl-2 my-1" style="height:255px">
+                            <div class="card" >
                                 <div class="card-body text-center ">
-                                        <h4 class="header-title mb-2"><strong>Proyectos</strong></h4>
+                                        <h4 class="header-title mb-3"><strong>Proyectos</strong></h4>
                                         <hr class="my-1" style="border-color: red;">                                       
                                        
-                                            <h1 class="mt-5">11</h1>                              
+                                            <h1 class="mt-4">11</h1>                              
                                 </div>
 
                             </div>
                         </div> <!-- end col -->
-                        <div class="col-xl-5 my-2">
-                                <div class="card" style="height:90%">
+                        <div class="col-xl-5 my-1" style="height:255px">
+                                <div class="card" style="height:70%">
                                     <div class="card-body text-center ">
                                             <h4 class="header-title mb-2"><strong>TIR Bruta</strong></h4>
                                             <hr class="my-1" style="border-color: red;">
                                             <div class="row">
-                                            <div class="mt-1 col-lg-6 text-center">
+                                            <div class="mt-0 col-lg-6 text-center card-box" style="height:118px">
                                                 <h5>Portafolio</h5>
                                                 <div class="sparkline2" class="text-center"></div>
                                             </div>
                                             
-                                            <div class="mt-1 col-lg-6 text-center">
+                                            <div class="mt-0 col-lg-6 text-center card-box"  style="height:118px">
                                                 <h5>Partícipe</h5>
                                                 <div class="sparkline2" class="text-center"></div>
                                             </div>
@@ -238,18 +240,18 @@
     
                                 </div>
                         </div> <!-- end col -->
-                        <div class="col-xl-5 my-2">
-                                <div class="card" style="height:90%">
+                        <div class="col-xl-5 my-1" style="height:255px">
+                                <div class="card" style="height:70%">
                                     <div class="card-body text-center ">
                                             <h4 class="header-title mb-2"><strong>Múltiplo</strong></h4>
                                             <hr class="my-1" style="border-color: red;">
                                             <div class="row">
-                                            <div class="mt-1 col-lg-6 text-center">
+                                            <div class="mt-0 col-lg-6 text-center card-box" style="height:118px">
                                                 <h5>Portafolio</h5>
                                                 <div class="sparkline2" class="text-center"></div>
                                             </div>
                                             
-                                            <div class="mt-1 col-lg-6 text-center">
+                                            <div class="mt-0 col-lg-6 text-center card-box" style="height:118px">
                                                 <h5>Partícipe</h5>
                                                 <div class="sparkline2" class="text-center"></div>
                                             </div>
@@ -258,42 +260,46 @@
     
                                 </div>
                         </div> <!-- end col -->
-                        <div class="col-xl-3 my-2">
-                                <div class="card" style="height:85%">
+                        <div class="col-xl-3 my-0" style="height:245px">
+                                <div class="card" style="height:100%">
                                     <div class="card-body text-center ">
-                                            <h4 class="header-title text-center">Composición del portafolio individual por Vehículo (%)</h4>
-                                            <div class="card-box" dir="ltr">                                       
-                                                <div id="pie-chart" class=" ct-chart ct-golden-section simple-pie-chart-chartist ct-slice-pie"></div>
-                                            </div> <!-- end card-box --> 
+                                            <h4 class="header-title text-center">Participación por Proyecto</h4>
+                                                                                   
+                                                <div id="simple-pie" 
+                                                class=" ct-chart ct-golden-section simple-pie-chart-chartist ct-slice-pie my-2" >
+
+                                                </div>
+                                            
                                     </div>
     
                                 </div>
                         </div> <!-- end col -->
-                        <div class="col-xl-4 my-2">
-                                <div class="card" style="height:85%">
+                        <div class="col-xl-3 my-0" style="height:245px">
+                                <div class="card"  style="height:100%">
                                     <div class="card-body text-center " >
                                             <h5 class="card-title mb-2"><strong>Capital Comprometido - La Positiva Generales</strong></h5>
                             <hr class="style1 mt-0" style="border-color: red;">
-                            <div id="gauge-capital-participe" class="ct-chart ct-golden-section"></div>
+                            <div id="gauge-capital-participe2" class="ct-chart ct-golden-section"></div>
                                     </div>
     
                                 </div>
                         </div> <!-- end col -->
                                   
-                        <div class="col-xl-5 my-2">
-                                <div class="card"  style="height:85%">
+                        <div class="col-xl-6 my-0" style="height:245px">
+                                <div class="card" stylt="height:100%">
                                     <div class="card-body text-center ">
-                                            <div id="overlapping-bars" class="text-center" style="height: 370px;  margin: 0px auto;"></div>
+                                            <div id="overlapping-bars" class="text-center" style="height: 197px;  margin: 0px auto;"></div>
                                     </div>
     
                                 </div>
                         </div> <!-- end col -->
-                        <div class="col-xl-12 my-2">
+                        <div class="col-xl-12 my-3">
                                 <div  style="height:90%">
                                     <div class=" text-center" style="margin:auto; padding-left:13%">
                                        <div class="row">
                                            <div class="col-xl-2">
                                                <img src="assets/images/sandiego.png" height="150" width="200">
+                                               
                                            </div>
                                            <div class="col-xl-2">
                                                 <img src="assets/images/costanera-uno.png" height="150"  width="200">

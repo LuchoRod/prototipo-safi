@@ -4096,69 +4096,69 @@ div.hopscotch-bubble .hopscotch-content {
 .ct-chart .ct-series.ct-series-a .ct-line,
 .ct-chart .ct-series.ct-series-a .ct-point,
 .ct-chart .ct-series.ct-series-a .ct-slice-donut {
-    stroke: #5F7CFE
+    stroke: #FC5A5A
 }
 
 .ct-chart .ct-series.ct-series-b .ct-bar,
 .ct-chart .ct-series.ct-series-b .ct-line,
 .ct-chart .ct-series.ct-series-b .ct-point,
 .ct-chart .ct-series.ct-series-b .ct-slice-donut {
-    stroke: #4264FD
+    stroke: #FA5050
 }
 
 .ct-chart .ct-series.ct-series-c .ct-bar,
 .ct-chart .ct-series.ct-series-c .ct-line,
 .ct-chart .ct-series.ct-series-c .ct-point,
 .ct-chart .ct-series.ct-series-c .ct-slice-donut {
-    stroke: #1540FE
+    stroke: #FA3B3B
 }
 
 .ct-chart .ct-series.ct-series-d .ct-bar,
 .ct-chart .ct-series.ct-series-d .ct-line,
 .ct-chart .ct-series.ct-series-d .ct-point,
 .ct-chart .ct-series.ct-series-d .ct-slice-donut {
-    stroke: #032FF3
+    stroke: #FC2323
 }
 
 .ct-chart .ct-series.ct-series-e .ct-bar,
 .ct-chart .ct-series.ct-series-e .ct-line,
 .ct-chart .ct-series.ct-series-e .ct-point,
 .ct-chart .ct-series.ct-series-e .ct-slice-donut {
-    stroke: #042CDD
+    stroke: #FF0000
 }
 
 .ct-chart .ct-series.ct-series-f .ct-bar,
 .ct-chart .ct-series.ct-series-f .ct-line,
 .ct-chart .ct-series.ct-series-f .ct-point,
 .ct-chart .ct-series.ct-series-f .ct-slice-donut {
-    stroke: #0227CB
+    stroke: #E40303
 }
 
 .ct-chart .ct-series.ct-series-g .ct-bar,
 .ct-chart .ct-series.ct-series-g .ct-line,
 .ct-chart .ct-series.ct-series-g .ct-point,
 .ct-chart .ct-series.ct-series-g .ct-slice-donut {
-    stroke: #0222AD
+    stroke: #CB0404
 }
 
 .ct-series-a .ct-area,
 .ct-series-a .ct-slice-pie {
-    fill: #607DFE
+    fill: #F4ECEC
 }
 
 .ct-series-b .ct-area,
 .ct-series-b .ct-slice-pie {
-    fill: #3E61FD
+    fill: #E34F4F
 }
 
 .ct-series-c .ct-area,
 .ct-series-c .ct-slice-pie {
-    fill: #1640FD
+    fill: #F94444
 }
 
 .ct-series-d .ct-area,
 .ct-series-d .ct-slice-pie {
-    fill: #012CED
+    fill: #FA2626
 }
 
 .ct-area {

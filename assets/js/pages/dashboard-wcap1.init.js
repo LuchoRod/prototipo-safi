@@ -19,10 +19,10 @@ new Chartist.Pie("#gauge-capital-total", {
         clickable: false
     })]
 }), new Chartist.Pie("#gauge-capital-participe", {
-    labels: [''],
+    labels: ['S/. 35,506,100 (97.34%)', 'S/. 970,271 (2.66%)'],
     series: [
-        { meta: 'Capital Llamado (%)', value: 98.45 },
-        { meta: 'Capital por Llamar (%)', value: 1.55 }
+        { meta: 'Capital Llamado (%)', value: 97.34 },
+        { meta: 'Capital por Llamar (%)', value: 2.66 }
     ]
 }, {
     startAngle: 270,
@@ -35,7 +35,25 @@ new Chartist.Pie("#gauge-capital-total", {
         position: 'bottom',
         clickable: false
     })]
+}),new Chartist.Pie("#gauge-capital-participe2", {
+    labels: [''],
+    series: [
+        { meta: 'Capital Llamado (%)', value: 97.34 },
+        { meta: 'Capital por Llamar (%)', value: 2.66 }
+    ]
+}, {
+    startAngle: 270,
+    total: 200,
+    chartPadding: 25,
+    labelOffset: 55,
+    labelDirection: 'explode',
+    plugins: [Chartist.plugins.legend({
+        legendNames: ['Capital Llamado', 'Capital por Llamar'],
+        position: 'bottom',
+        clickable: false
+    })]
 });
+
 $(document).ready(function() {
     $("#range_plazos").ionRangeSlider({
         grid: true,
