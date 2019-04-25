@@ -36,7 +36,7 @@ new Chartist.Pie("#gauge-capital-total", {
         clickable: false
     })]
 }),new Chartist.Pie("#gauge-capital-participe2", {
-    labels: [''],
+    labels: ['97.34%', '2.66%'],
     series: [
         { meta: 'Capital Llamado (%)', value: 97.34 },
         { meta: 'Capital por Llamar (%)', value: 2.66 }
@@ -45,7 +45,7 @@ new Chartist.Pie("#gauge-capital-total", {
     startAngle: 270,
     total: 200,
     chartPadding: 25,
-    labelOffset: 55,
+    labelOffset: 40,
     labelDirection: 'explode',
     plugins: [Chartist.plugins.legend({
         legendNames: ['Capital Llamado', 'Capital por Llamar'],
