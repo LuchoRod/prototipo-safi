@@ -6,17 +6,19 @@ var chart = new CanvasJS.Chart("columnContainer", {
 	animationEnabled: true,
 	
 	axisX: {
+        title: "Empresas",
 		interval: 1,
 		intervalType: "year"
 	},
 	axisY:{
+        title: "Porcentajes",
         valueFormatString:"#0",
         interval:20,
 		gridColor: "#B6B1A8",
 		tickColor: "#B6B1A8"
     },
     axisY2: {
-        title: "Percent",
+       
 		suffix: "%",
 		gridThickness: 0,
 		lineColor: "#C0504E",
@@ -33,25 +35,25 @@ var chart = new CanvasJS.Chart("columnContainer", {
 		color: "#5959E1",
 		name: "Var. Valor Razonable",
 		dataPoints: [
-			{ y: 4.75, x: new Date(2010,0), label:"Agroempaques" },
-			{ y: 4.75, x: new Date(2011,0),label:"Hermes"  },
-			{ y: 4.75, x: new Date(2012,0),label:"IPSA"  },
-			{ y: 4.75, x: new Date(2013,0),label:"Real Once"  },
-			{ y: 4.75, x: new Date(2014,0),label:"SUAM"  },
-			{ y: 4.75, x: new Date(2015,0),label:"Collique"  },
-            { y: 4.75, x: new Date(2016,0),label:"W Capital SAFI"  },
-            { y: 4.75, x: new Date(2017,0), label:"FIVIS I" },
-			{ y: 4.75, x: new Date(2018,0),label:"FODEVI"  },
-			{ y: 4.75, x: new Date(2019,0),label:"T. Callao"  },
-			{ y: 4.75, x: new Date(2020,0),label:"TW"  },
-			{ y: 4.75, x: new Date(2021,0),label:"Civitano"  },
-			{ y: 4.75, x: new Date(2022,0),label:"Comunal"  },
-            { y: 4.75, x: new Date(2023,0),label:"AP SM"  },
-            { y: 4.75, x: new Date(2024,0),label:"Frialsa"  },
-			{ y: 4.75, x: new Date(2025,0),label:"Hiro Sake"  },
-			{ y: 4.75, x: new Date(2026,0),label:"Juntoz"  },
-			{ y: 4.75, x: new Date(2027,0),label:"EFE"  },
-			{ y: 85.5, x: new Date(2028,0),label:"Total"  }
+			{ y: 4.75, x: new Date(2010,0), label:"Agroempaques", indexLabel: "$6.98" },
+			{ y: 4.75, x: new Date(2011,0),label:"Hermes", indexLabel: "$6.98"  },
+			{ y: 4.75, x: new Date(2012,0),label:"IPSA", indexLabel: "$6.98"  },
+			{ y: 4.75, x: new Date(2013,0),label:"Real Once", indexLabel: "$6.98"  },
+			{ y: 4.75, x: new Date(2014,0),label:"SUAM", indexLabel: "$6.98"  },
+			{ y: 4.75, x: new Date(2015,0),label:"Collique", indexLabel: "$6.98"  },
+            { y: 4.75, x: new Date(2016,0),label:"W Capital SAFI", indexLabel: "$6.98"  },
+            { y: 4.75, x: new Date(2017,0), label:"FIVIS I", indexLabel: "$6.98" },
+			{ y: 4.75, x: new Date(2018,0),label:"FODEVI", indexLabel: "$6.98"  },
+			{ y: 4.75, x: new Date(2019,0),label:"T. Callao", indexLabel: "$6.98"  },
+			{ y: 4.75, x: new Date(2020,0),label:"TW", indexLabel: "$6.98"  },
+			{ y: 4.75, x: new Date(2021,0),label:"Civitano", indexLabel: "$6.98"  },
+			{ y: 4.75, x: new Date(2022,0),label:"Comunal", indexLabel: "$6.98"  },
+            { y: 4.75, x: new Date(2023,0),label:"AP SM", indexLabel: "$6.98"  },
+            { y: 4.75, x: new Date(2024,0),label:"Frialsa", indexLabel: "$6.98"  },
+			{ y: 4.75, x: new Date(2025,0),label:"Hiro Sake", indexLabel: "$6.98"  },
+			{ y: 4.75, x: new Date(2026,0),label:"Juntoz", indexLabel: "$6.98"  },
+			{ y: 4.75, x: new Date(2027,0),label:"EFE", indexLabel: "$6.98"  },
+			{ y: 85.5, x: new Date(2028,0),label:"Total", indexLabel: "$125.7"  }
 		]
 		},
 		{        

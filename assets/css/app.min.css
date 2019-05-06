@@ -4096,7 +4096,7 @@ div.hopscotch-bubble .hopscotch-content {
 .ct-chart .ct-series.ct-series-a .ct-line,
 .ct-chart .ct-series.ct-series-a .ct-point,
 .ct-chart .ct-series.ct-series-a .ct-slice-donut {
-    stroke: #6471FB
+    stroke: #D7DBFF
 }
 
 .ct-chart .ct-series.ct-series-b .ct-bar,
@@ -4110,7 +4110,7 @@ div.hopscotch-bubble .hopscotch-content {
 .ct-chart .ct-series.ct-series-c .ct-line,
 .ct-chart .ct-series.ct-series-c .ct-point,
 .ct-chart .ct-series.ct-series-c .ct-slice-donut {
-    stroke: #4251FD
+    stroke: #A3A6C1
 }
 
 .ct-chart .ct-series.ct-series-d .ct-bar,
@@ -4131,14 +4131,14 @@ div.hopscotch-bubble .hopscotch-content {
 .ct-chart .ct-series.ct-series-f .ct-line,
 .ct-chart .ct-series.ct-series-f .ct-point,
 .ct-chart .ct-series.ct-series-f .ct-slice-donut {
-    stroke: #0015FA
+    stroke: #1501B4
 }
 
 .ct-chart .ct-series.ct-series-g .ct-bar,
 .ct-chart .ct-series.ct-series-g .ct-line,
 .ct-chart .ct-series.ct-series-g .ct-point,
 .ct-chart .ct-series.ct-series-g .ct-slice-donut {
-    stroke: #0416DC
+    stroke: #3622DA
 }
 
 .ct-series-a .ct-area,

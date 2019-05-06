@@ -44,8 +44,8 @@ new Chartist.Pie("#gauge-capital-total", {
 }, {
     startAngle: 270,
     total: 200,
-    chartPadding: 25,
-    labelOffset: 40,
+    chartPadding: 20,
+    labelOffset: 35,
     labelDirection: 'explode',
     plugins: [Chartist.plugins.legend({
         legendNames: ['Capital Llamado', 'Capital por Llamar'],
