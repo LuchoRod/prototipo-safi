@@ -103,7 +103,7 @@
         <!-- ============================================================== -->
 
         <div style="padding-top: 5%;" >
-            <div class="container-fluid">
+            
 
                 <!-- start page title -->
                 <div class="row ">
@@ -176,14 +176,16 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr style="background-color:lightsteelblue">
-                                                <td >
+                                            <tr style="background-color:lightsteelblue"
+                                            class="clickable" data-toggle="collapse" data-target="#group-of-rows-1" 
+                                            aria-expanded="false" aria-controls="group-of-rows-1">
+                                          
+                                                <td>
+                                                      <i class="fa fa-plus" aria-hidden="true"></i>
                                                    <strong>Holdings</strong>
                                                 </td>        
                                                 <td></td>   
-                                                      <td>
-                                                                                                        
-                                                      </td>
+                                                <td></td>  
                                                       <td>
                                                                                                             
                                                       </td>
@@ -210,9 +212,16 @@
                                                       </td>
                                                  
                                             </tr>
-                                            <tr style="background-color:lightgray">
+                                          </tbody>
+                                          <tbody id="group-of-rows-1" class="collapse">
+                                            <tr style="background-color:lightgray"                                            
+                                            class="clickable" data-toggle="collapse" data-target="#group-of-rows-2" 
+                                            aria-expanded="false" aria-controls="group-of-rows-2">
                                                 
-                                                    <th style="font-weight:900; padding-left:2%">  Nisa Malls </th>                                                                                             
+                                                    <th style="font-weight:900; padding-left:2%">
+                                                         <i class="fa fa-plus" aria-hidden="true"></i>
+                                                           Nisa Malls
+                                                          </th>                                                                                             
                                                        <td></td>
                                                          <td>
                                                                                                            
@@ -242,7 +251,9 @@
                                                                 -                                           
                                                          </td>
                                                      
-                                            </tr>                                                
+                                            </tr>        
+                                          </tbody>    
+                                          <tbody id="group-of-rows-2" class="collapse">                                    
                                             <tr>                                                                                         
                                                <td style="padding-left:3%">
                                                      Caja                                    
@@ -299,12 +310,17 @@
                                                                                                    
                                                     </td>
                                             </tr>     
-                                               
+                                          </tbody>
                                           
-                                              
-                                                     <tr style="background-color:lightgray"> 
+                                              <tbody id="group-of-rows-1" class="collapse">
+                                                     <tr style="background-color:lightgray"                                                     
+                                            class="clickable" data-toggle="collapse" data-target="#group-of-rows-3" 
+                                            aria-expanded="false" aria-controls="group-of-rows-3"> 
                                                           
-                                                        <th style="font-weight:900; padding-left:2%" > Nisa Asset Management</th>
+                                                        <th style="font-weight:900; padding-left:2%" >
+                                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                                             Nisa Asset Management
+                                                            </th>
                                                          <td></td>
                                                                 <td>
                                                                                                               
@@ -334,7 +350,9 @@
                                                                     -                                           
                                                                 </td>
                                                       
-                                                    </tr>       
+                                                    </tr>     
+                                                   </tbody>  
+                                                   <tbody  id="group-of-rows-3" class="collapse">
                                                      <tr>                                         
                                                             <td style="padding-left:3%">
                                                                 Caja                                       
@@ -393,11 +411,16 @@
                                                                                                         
                                                                  </td>
                                                              </tr>   
-                                                            
-                                                                   
-                                                 <tr style="background-color:lightgray">
+                                                            </tbody>
+                                                             <tbody id="group-of-rows-1" class="collapse">      
+                                                 <tr style="background-color:lightgray"                                              
+                                            class="clickable" data-toggle="collapse" data-target="#group-of-rows-4" 
+                                            aria-expanded="false" aria-controls="group-of-rows-4">
                                                      
-                                                           <th style="font-weight: 900; padding-left:2%">  Nisa Blindados </th>
+                                                           <th style="font-weight: 900; padding-left:2%"> 
+                                                               <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                Nisa Blindados 
+                                                               </th>
                                                              <td></td>                                                             
                                                                     <td>
                                                                                                          
@@ -428,6 +451,8 @@
                                                                     </td>
                                                              
                                                     </tr>       
+                                                   </tbody>
+                                                   <tbody id="group-of-rows-4" class="collapse">
                                                                 <tr>                                         
                                                                     <td style="padding-left:3%">
                                                                           Hermes                                   
@@ -522,10 +547,16 @@
                                                                                                                      
                                                                              </td>
                                                                         </tr>   
-                                                                     
-                                                                            <tr style="background-color:lightgray">
+                                                                     </tbody>
+                                                                     <tbody id="group-of-rows-1" class="collapse">
+                                                                            <tr style="background-color:lightgray"
+                                                                            class="clickable" data-toggle="collapse" data-target="#group-of-rows-5" 
+                                                                            aria-expanded="false" aria-controls="group-of-rows-5">
                                                      
-                                                                                <th style="font-weight: 900; padding-left:2%">  Nisa Inmuebles </th>
+                                                                                <th style="font-weight: 900; padding-left:2%">  
+                                                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                                    Nisa Inmuebles 
+                                                                                 </th>
                                                                                                                   
                                                                                     <td>                                                                                                              
                                                                                     </td>                                                                                  
@@ -559,6 +590,8 @@
                                                                                      </td>                                                                                    
                                                                         
                                                                             </tr>  
+                                                                           </tbody>
+                                                                           <tbody id="group-of-rows-5" class="collapse">
                                                                             <tr>                                         
                                                                                     <td style="padding-left:3%">
                                                                                      Agroempaques                               
@@ -794,10 +827,16 @@
                                                                                                                              
                                                                                      </td>
                                                                             </tr>  
-                                                                         
-                                                                            <tr style="background-color:lightgray">
+                                                                           </tbody>
+                                                                            <tbody id="group-of-rows-1" class="collapse">
+                                                                            <tr style="background-color:lightgray"
+                                                                            class="clickable" data-toggle="collapse" data-target="#group-of-rows-6" 
+                                                                            aria-expanded="false" aria-controls="group-of-rows-6">
                                                      
-                                                                                    <th style="font-weight: 900; padding-left:2%"> AyF </th>
+                                                                                    <th style="font-weight: 900; padding-left:2%">
+                                                                                          <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                                           AyF 
+                                                                                          </th>
                                                                                                                         
                                                                                         <td></td>
                                                                                           <td>
@@ -829,6 +868,8 @@
                                                                                           </td>
                                                                                       
                                                                             </tr>         
+                                                                           </tbody>
+                                                                           <tbody id="group-of-rows-6" class="collapse">
                                                                             <tr>                                         
                                                                                     <td style="padding-left:3%">
                                                                                      Collique                         
@@ -921,10 +962,15 @@
                                                                                                                         
                                                                                 </td>                                                                           
                                                                         </tr>
-                                                                      
-                                           
-                                                <tr style="background-color:lightgray">
-                                                    <th style="font-weight: 900; padding-left:2%"> Holding Plaza</th>
+                                                                     </tbody>
+                                              <tbody id="group-of-rows-1" class="collapse">
+                                                <tr style="background-color:lightgray"
+                                                class="clickable" data-toggle="collapse" data-target="#group-of-rows-7" 
+                                                aria-expanded="false" aria-controls="group-of-rows-7">
+                                                    <th style="font-weight: 900; padding-left:2%">
+                                                         <i class="fa fa-plus" aria-hidden="true"></i>
+                                                          Holding Plaza
+                                                         </th>
                                                                                 
                                                        <td></td>
                                                          <td>                                                                                                           
@@ -955,6 +1001,8 @@
                                                          </td>
                                                    
                                                 </tr>  
+                                             </tbody>
+                                             <tbody id="group-of-rows-7" class="collapse">
                                                 <tr>                                         
                                                     <td style="padding-left:3%">
                                                     IPSA                         
@@ -1022,9 +1070,15 @@
                                                 <td></td>
                                                 <td></td>                           
                                         </tr>  
-                                   
-                                              <tr style="background-color:lightgray">
-                                                  <th style="font-weight: 900; padding-left:2%"> IISA</th>
+                                       </tbody>
+                                        <tbody id="group-of-rows-1" class="collapse">
+                                              <tr style="background-color:lightgray"
+                                              class="clickable" data-toggle="collapse" data-target="#group-of-rows-8" 
+                                              aria-expanded="false" aria-controls="group-of-rows-8">
+                                                  <th style="font-weight: 900; padding-left:2%"> 
+                                                      <i class="fa fa-plus" aria-hidden="true"></i>
+                                                      IISA
+                                                   </th>
                                                                             
                                                     <td></td>
                                                       <td>
@@ -1056,6 +1110,8 @@
                                                       </td>
                                                   
                                               </tr>  
+                                        </tbody>
+                                        <tbody id="group-of-rows-8" class="collapse">
                                               <tr>                                         
                                                     <td style="padding-left:3%">
                                                      SUAM                         
@@ -1120,13 +1176,16 @@
                                                 <td></td>
                                           
                                             </tr>                                         
-                                                    
-                                                            <tr style="background-color:lightsteelblue">
+                                          </tbody>
+                                          <tbody>
+                                                            <tr style="background-color:lightsteelblue"
+                                                            class="clickable" data-toggle="collapse" data-target="#group-of-rows-9" 
+                                            aria-expanded="false" aria-controls="group-of-rows-9">
                                                             
-                                                                    <th> Fondos </th>
-                                                                                                                                                       
-                                                                    
-                                                                    
+                                                                    <th>
+                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                         Fondos 
+                                                                        </th>   
                                                                      <td></td>
                                                                      <td></td>
                                                                      <td></td>
@@ -1140,8 +1199,15 @@
                                                                                                                                                                                                                   
                                                               
                                                             </tr>
-                                                           <tr style="background-color:lightgray">
-                                                                <th style="font-weight: 900; padding-left:2%"> W Capital Partners I</th>
+                                                         </tbody>
+                                                      <tbody id="group-of-rows-9" class="collapse">
+                                                           <tr style="background-color:lightgray"
+                                                           class="clickable" data-toggle="collapse" data-target="#group-of-rows-10" 
+                                            aria-expanded="false" aria-controls="group-of-rows-10">
+                                                                <th style="font-weight: 900; padding-left:2%">
+                                                                     <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                      W Capital Partners I
+                                                                     </th>
                                                                   <td></td>
                                                                      <td>
                                                                                                                        
@@ -1172,6 +1238,8 @@
                                                                      </td>
                                                                 
                                                            </tr> 
+                                                         </tbody>
+                                                         <tbody id="group-of-rows-10" class="collapse">
                                                            <tr>                                         
                                                                 <td style="padding-left:3%">
                                                                  FIVIS I                         
@@ -1268,9 +1336,15 @@
                                                                  <td></td>
                                                                  <td></td>                                                                                                                                   
                                                         </tr>
-                                                     
-                                                             <tr style="background-color:lightgray">
-                                                                 <th  style="font-weight: 900; padding-left:2%"> W Capital Partners II</th>
+                                                      </tbody>
+                                                        <tbody id="group-of-rows-9" class="collapse">
+                                                             <tr style="background-color:lightgray"
+                                                             class="clickable" data-toggle="collapse" data-target="#group-of-rows-11" 
+                                            aria-expanded="false" aria-controls="group-of-rows-11">
+                                                                 <th  style="font-weight: 900; padding-left:2%"> 
+                                                                     <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                     W Capital Partners II
+                                                                  </th>
                                                                                              
                                                                     <td>
                                                                      <td>
@@ -1302,6 +1376,8 @@
                                                                      </td>
                                                                   
                                                              </tr>
+                                                            </tbody>
+                                                            <tbody id="group-of-rows-11" class="collapse">
                                                              <tr>                                         
                                                                     <td style="padding-left:3%">
                                                                      FODEVI                       
@@ -1399,9 +1475,15 @@
                                                                     <td></td>                              
                                                                     
                                                             </tr> 
-                                                         
-                                                                   <tr style="background-color:lightgray"> 
-                                                                       <th style="font-weight: 900; padding-left:2%">Fondo GW</th>
+                                                         </tbody>
+                                                            <tbody id="group-of-rows-9" class="collapse">
+                                                                   <tr style="background-color:lightgray"
+                                                                   class="clickable" data-toggle="collapse" data-target="#group-of-rows-12" 
+                                                                   aria-expanded="false" aria-controls="group-of-rows-12"> 
+                                                                       <th style="font-weight: 900; padding-left:2%">
+                                                                           <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                           Fondo GW
+                                                                        </th>
                                                                        <td></td>
                                                                        <td></td>
                                                                        <td></td>
@@ -1421,12 +1503,10 @@
                                                                        </td>
                                                                        <td style="font-weight: bold">
                                                                            116,359                                        
-                                                                       </td>
-                                                                                                          
-                                                                     
-                                                                          
-                                                                           
+                                                                       </td>    
                                                                    </tr>   
+                                                                  </tbody>
+                                                                  <tbody id="group-of-rows-12" class="collapse">
                                                                    <tr>                                         
                                                                         <td style="padding-left:3%">
                                                                         Civitano                   
@@ -1637,7 +1717,8 @@
                                                                         <td>-288</td>                                                                   
                                                                        
                                                                 </tr>   
-                                                             
+                                                               </tbody>
+                                                                <tbody id="group-of-rows-9" class="collapse">
                                                                          <tr style="background-color:lightgray">                                         
                                                                                 <td style="font-weight: 900; padding-left:2%" colspan="2">
                                                                                       Fondo GW Internacional                          
@@ -1652,7 +1733,8 @@
                                                                                 <td></td>
                                                                                 <td></td>                                                                       
                                                                          </tr>          
-                                                                    
+                                                                        </tbody>
+                                                                        <tbody id="group-of-rows-9" class="collapse">
                                                                          <tr style="background-color:lightgray">                                         
                                                                                 <td style="font-weight: 900; padding-left:2%" colspan="2">
                                                                                       Fondo GW Real State                       
@@ -1667,9 +1749,15 @@
                                                                                 <td></td>
                                                                                 <td></td>                                                                                                                                                   
                                                                          </tr>  
-                                                                       
-                                                                       <tr style="background-color:lightgray">
-                                                                           <th  style="font-weight: 900; padding-left:2%" colspan="2"> Fondo W Capital Retail I</th>
+                                                                        </tbody>
+                                                                        <tbody id="group-of-rows-9" class="collapse">
+                                                                       <tr style="background-color:lightgray"
+                                                                       class="clickable" data-toggle="collapse" data-target="#group-of-rows-13" 
+                                                                       aria-expanded="false" aria-controls="group-of-rows-13">
+                                                                           <th  style="font-weight: 900; padding-left:2%" colspan="2">
+                                                                                 <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                                  Fondo W Capital Retail I
+                                                                                 </th>
                                                                                                            
                                                                                  <td></td>                                                                               
                                                                                  <td></td>
@@ -1682,7 +1770,9 @@
                                                                                  <td style="font-weight: bold" >12,307</td>
                                                                                                                                                                                                                               
                                                                          
-                                                                       </tr>      
+                                                                       </tr>    
+                                                                     </tbody>  
+                                                                     <tbody id="group-of-rows-13" class="collapse">
                                                                        <tr>                                         
                                                                             <td style="padding-left:3%">
                                                                              EFE                   
@@ -1765,7 +1855,7 @@
                                                                             <td>-0</td>
                                                                             <td>-3</td>                                                                                             
                                                                     </tr> 
-                                                               
+                                                                  </tbody>
                                                                 
                                                                      <tr style="background-color:lightsteelblue">                                         
                                                                             <td style="font-weight: 900" >
@@ -1832,8 +1922,12 @@
                 <h4 class="text-center">Composición del portafolio individual por inversión (en US$,000)</h4>
                 <div class="row">
                   <div class="col-lg-12 card-box">
-                    <div id="chartContainer" style="height: 370px; width:100%">                       
+                     
+                        <div id="chartdiv2" style="width:100%; height:500px">                                 
                     </div>
+             
+                  
+            
                     <div class="row text-md-right" style="margin:auto">
                     <h5 class="col-lg-1">Holdings</h5> <svg class="col-lg-0" width="60" height="30" style="padding-top:13px; padding-right:15px">
                             <rect width="30" height="10" style="fill:rgb(14,13,174);stroke-width:3;stroke:rgb(0,0,0)" />
@@ -1863,16 +1957,24 @@
                         <h5 style="padding-left:3%">Ronda/Aporte</h5>
                         <h5 style="padding-left:3%">DCF</h5>
                         <h5 style="padding-left:3%">Tasación</h5>
-                        <div id="columnContainer" class="text-center" style="height: 370px;  margin: 0px auto;"></div>
+                        <div id="morris-bar-stacked" class="text-center" style="height: 370px;  margin: 0px auto;"></div>
+                        <div class="text-center">
+                              <p class="text-muted font-15 font-family-secondary mb-0">
+                                  <span class="mx-2"><i class="mdi mdi-checkbox-blank-circle text-blue"></i> Var. Valor Razonable</span>
+                                  <span class="mx-2"><i class="mdi mdi-checkbox-blank-circle text-muted"></i> Dividendos</span>
+                              </p>
+                          </div>
                     </div>
                     </div> <!-- end col-->
                     
                 </div>
+                <div class="card-box"> 
                 <h3>Flujos</h3>
-                <div id="chartContainer2" style="height: 370px; width:100%">                       
-                    </div>         
+                <div id="chartdiv" style="height: 370px; width:100%">                       
+                    </div> 
+                    </div>        
       
-            </div> <!-- end container -->
+           
             <div>
                   <button type="button" id="myBtn" onclick="topFunction()" 
                   class="btn btn-blue waves-effect waves-light ">Ir arriba ^</button>
@@ -1893,27 +1995,37 @@
         <!-- Right bar overlay-->
         <div class="rightbar-overlay"></div>        
 
-        <!-- Vendor js -->
+        <!-- Vendor js -->        
         <script src="assets/js/vendor.min.js"></script>
-
+       
         <!-- Chart JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
         <script src="assets/libs/chart-js/Chart.bundle.min.js"></script>
         <script src="assets/libs/moment/moment.min.js"></script>
         <script src="assets/libs/jquery-scrollto/jquery.scrollTo.min.js"></script>
         <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
         <script src="assets/js/canvasjs.min.js"></script>
         <script src="assets/js/canvasjs.react.js"></script>
+
+          <!--Morris Chart-->
+          <script src="assets/libs/morris-js/morris.min.js"></script>
+          <script src="assets/libs/raphael/raphael.min.js"></script>
+  
+       
         
         <!--Chartist Chart-->
         <script src="assets/libs/chartist/chartist.min.js"></script>
         <script src="assets/libs/chartist/chartist-plugin-tooltip.min.js"></script>
         
-    
-
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+        
+        <script src="assets/js/waterfall-charts.js"></script> 
 <!-- Init js -->
         <script src="assets/js/pages/chartist.init.js"></script>
         <script src="assets/js/pages/morris.init.js"></script>
-       <script src="assets/js/button-top.js"></script>
+        <script src="assets/js/button-top.js"></script>
         
         <script src="assets/js/stacked-column-chart.js"></script>
         
@@ -1925,10 +2037,12 @@
 
         <!-- Dashboard init JS -->
         <script src="assets/js/pages/dashboard-3.init.js"></script>
-         <!--C3 Chart-->
-         <script src="assets/libs/d3/d3.min.js"></script>
-         <script src="assets/libs/c3/c3.min.js"></script>
- 
+        
+        <script src="assets/js/chartjs-plugin-waterfall.min.js"></script> 
+        <script src="assets/js/waterfall-chartjs.js"></script>
+        <!--C3 Chart-->
+        <script src="assets/libs/d3/d3.min.js"></script>
+        <script src="assets/libs/c3/c3.min.js"></script>
          <!-- Init js -->
          <script src="assets/js/pages/c3.init.js"></script>
 

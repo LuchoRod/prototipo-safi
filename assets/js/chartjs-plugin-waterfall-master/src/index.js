@@ -11,6 +11,7 @@ const defaultOptions = {
       startColor: 'rgba(0, 0, 0, 0.55)', // opaque
       endColor: 'rgba(0, 0, 0, 0)', // transparent
     },
+    
   },
 };
 

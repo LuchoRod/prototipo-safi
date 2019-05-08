@@ -186,5 +186,13 @@ function toolTipContent(e) {
 }
 
 
+$(document).ready(function(e) {
+setTimeout(removeWatermark, 10);
+});
+function removeWatermark(){
+
+$('.chartContainer img[src*="image/png;base64"]').remove();
+}
+
 }
 
