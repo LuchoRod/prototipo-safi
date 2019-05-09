@@ -176,7 +176,7 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr style="background-color:lightsteelblue"
+                                            <tr style="background-color:lightsteelblue" id="#holdings" onclick="collapseToggle()"
                                             class="clickable" data-toggle="collapse" data-target="#group-of-rows-1" 
                                             aria-expanded="false" aria-controls="group-of-rows-1">
                                           
@@ -991,7 +991,7 @@
                                             </tr>                                         
                                           </tbody>
                                           <tbody>
-                                                            <tr style="background-color:lightsteelblue"
+                                                            <tr style="background-color:lightsteelblue" onclick="collapseToggle()"
                                                             class="clickable" data-toggle="collapse" data-target="#group-of-rows-9" 
                                             aria-expanded="false" aria-controls="group-of-rows-9">
                                                             
@@ -1628,7 +1628,11 @@
                                                         
                                                                             
                 </div> <!-- end row -->
-
+<script>
+   function collapseToggle() {
+$('.collapse').collapse("hide");
+   }
+</script>
                 <div class="row">       
                             <div class="col-lg-6">
                                     <h4 class="header-title text-center">Composición del portafolio individual por Vehículo (%)</h4>
