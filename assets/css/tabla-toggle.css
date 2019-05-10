@@ -1,0 +1,8 @@
+tr[data-toggle="collapse"] .fa:after {
+    content: '\002d';
+   /* chevron-down */
+}
+tr[data-toggle="collapse"].collapsed .fa:after {
+    content: '\002b';
+   /* chevron-right */
+}

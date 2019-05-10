@@ -1,0 +1,42 @@
+#hechos{
+    padding: 50px 0px 50px 0px;
+}
+
+.slick-slide.slick-active{
+    opacity: 1;
+}
+
+.slick-slider {
+    width: 90%;
+    margin: auto;
+  }
+
+  .card-deck{
+    background-color: #000;
+  }
+
+  .btnv {
+    height: 47px;
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    top: 50% !important;
+  }
+
+  .btnv:hover {
+    color: #f1556c;
+  }
+
+  .card .card-body .card-text{
+      text-align: justify;
+  }    
+
+  .icon-arrow-right{
+    right: -33px;
+  }
+
+  .icon-arrow-left{
+    left: -33px;
+  }
+  
+ 

@@ -12,8 +12,10 @@
 
         <!-- Plugins css-->
         <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
-
-        
+        <link href="assets/css/tabla-toggle.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/noticias.component.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/slick-1.8.1/slick/slick.css"rel="stylesheet" type="text/css" />
+        <link href="assets/libs/slick-1.8.1/slick/slick-theme.css"rel="stylesheet" type="text/css" />
         <!-- Chartist Chart CSS -->
         <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
         <link href="assets/libs/c3/c3.min.css" rel="stylesheet" type="text/css" />
@@ -103,7 +105,7 @@
         <!-- ============================================================== -->
 
         <div style="padding-top: 5%;" >
-            
+            <div class="container-fluid">
 
                 <!-- start page title -->
                 <div class="row ">
@@ -1721,7 +1723,63 @@ $('.collapse').collapse("hide");
             <div>
                   <button type="button" id="myBtn" onclick="topFunction()" 
                   class="btn btn-blue waves-effect waves-light ">Ir arriba ^</button>
-            </div>  
+            </div>
+            
+            <div id="hechos">
+                  <div class="col-12">
+                      <h3 class="mb-3">Hechos Relevantes</h3>
+                      <div class="card-deck" >
+                <ngx-slick-carousel class="carousel" 
+                #slickModal="slick-carousel" 
+                [config]="slideConfig" >
+                <!-- (init)="slickInit($event)"
+                (breakpoint)="breakpoint($event)"
+                (afterChange)="afterChange($event)"
+                (beforeChange)="beforeChange($event)"> -->
+              <div ngxSlickItem *ngFor="let n of nots" >
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="{{ n.cUrlImage }}" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title">{{ n.ctitulo }}</h5>
+                      <p class="card-text">{{ n.ccuerpo }}</p>
+                  </div>
+                </div>  
+              </div>
+              </ngx-slick-carousel>
+              
+              </div>
+              </div>
+              </div>
+
+
+
+                  <div class="col-12">
+             
+              <ngx-slick-carousel class="carousel"
+              #slickModal="slick-carousel" 
+              [config]="slideConfig" >
+              <div ngxSlickItem *ngFor="let n of nots" >
+                <div class="card">
+                        <div class="card-body">
+              <div class="your-class">
+                  <div><img src="assets/images/Oficina.jpeg" height="100"></div>
+                  <div>your content</div>
+                  <div>your content</div>
+                  <div>your content</div>
+                  <div>your content</div>
+                  <div>your content</div>
+                  <div>your content</div>
+                  <div>your content</div>
+                  <div>your content</div>
+                </div>   
+               </div> 
+               </div>
+               </div>               
+               </ngx-slick-carousel>
+           
+               </div>
+               
+            </div>
         </div>
         <!-- end wrapper -->
 
@@ -1786,11 +1844,26 @@ $('.collapse').collapse("hide");
         <!--C3 Chart-->
         <script src="assets/libs/d3/d3.min.js"></script>
         <script src="assets/libs/c3/c3.min.js"></script>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/libs/slick-1.8.1/slick/slick.min.js"></script>
+
          <!-- Init js -->
          <script src="assets/js/pages/c3.init.js"></script>
-
+    
+         <script type="text/javascript">
+            $(document).ready(function(){
+              $('.your-class').slick({
+               infinite: true,
+               slidesToShow: 3,
+               slidesToScroll: 3
+              });
+            });
+          </script>
         <!-- App js-->
         <script src="assets/js/app.min.js"></script>
+    
         
     </body>
 </html>
