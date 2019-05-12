@@ -13,6 +13,7 @@
 
   .card-deck{
     background-color: #000;
+    
   }
 
   .btnv {
@@ -26,6 +27,10 @@
   .btnv:hover {
     color: #f1556c;
   }
+
+.card{
+  background-color:#000;
+}
 
   .card .card-body .card-text{
       text-align: justify;
