@@ -17,6 +17,7 @@
         <!-- Chartist Chart CSS -->
         <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
 
+        <link href="assets/libs/c3/c3.min.css" rel="stylesheet" type="text/css" />
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -204,19 +205,19 @@
             
                 <div class="row">
                         <div class="col-lg-12 card-box">
-                          <div id="chartContainer3" style="height: 370px; width:100%">                       
+                          <div id="chartdiv3" style="width:100%; height:500px">                       
                           </div>
                           <div class="row text-md-right" style="margin:auto; padding-left: 20%">                       
                                
-                                    <h5 class="col-lg-2">Aumento</h5> <svg class="col-lg-0" width="60" height="30"  style="padding-top:13px; ">
+                                    <h5 class="col-lg-2">Disminución</h5> <svg class="col-lg-0" width="60" height="30"  style="padding-top:13px; ">
                                           <rect width="30" height="10" style="fill:rgb(198,196,232);stroke-width:3;stroke:rgb(0,0,0)" />
                                         </svg>
                                        
-                                            <h5 class="col-lg-2">Disminución</h5> <svg class="col-lg-0" width="60" height="30"  style="padding-top:13px; ">
-                                                  <rect width="30" height="10" style="fill:rgb(242,51,51);stroke-width:3;stroke:rgb(0,0,0)" />
+                                            <h5 class="col-lg-2">Aumento</h5> <svg class="col-lg-0" width="60" height="30"  style="padding-top:13px; ">
+                                                  <rect width="30" height="10" style="fill:rgb(245,12,12);stroke-width:3;stroke:rgb(0,0,0)" />
                                                 </svg>
                                                 <h5 class="col-lg-1">Total</h5> <svg class="col-lg-0" width="60" height="30" style="padding-top:13px;">
-                                                        <rect width="30" height="10" style="fill:rgb(230,79,79);stroke-width:3;stroke:rgb(0,0,0)" />
+                                                        <rect width="30" height="10" style="fill:rgb(246,91,91);stroke-width:3;stroke:rgb(0,0,0)" />
                                                       </svg>           
                           </div>
                         </div>
@@ -259,8 +260,11 @@
         <script src="assets/libs/chartist/chartist.min.js"></script>
         <script src="assets/libs/chartist/chartist-plugin-tooltip.min.js"></script>
         
-    
-
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+        
+        <script src="assets/js/waterfall-charts.js"></script>
         <!-- Init js -->
         <script src="assets/js/pages/chartist.init.js"></script>
         <script src="assets/js/pages/morris.init.js"></script>      

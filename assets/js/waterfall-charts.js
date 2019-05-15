@@ -290,3 +290,156 @@ am4core.ready(function() {
     
     }); // end am4core.ready()
 
+    am4core.ready(function() {
+
+      // Themes begin
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+      
+      var chart = am4core.create("chartdiv3", am4charts.XYChart);
+      chart.hiddenState.properties.opacity = 0; // this makes initial fade in effect
+      
+      // using math in the data instead of final values just to illustrate the idea of Waterfall chart
+      // a separate data field for step series is added because we don't need last step (notice, the last data item doesn't have stepValue)
+      chart.data = [ {
+        category: "Collique",
+        value: 46.12,
+        open: 0,
+        stepValue: 46.12,
+        color: '#F50C0C',
+        displayValue: 46.12
+      }, {
+        category: "SUAM",
+        value: 46.12 + 2,
+        open: 46.12,
+        stepValue: 46.12 + 2,
+        color: '#F50C0C',
+        displayValue: 2
+      }, {
+        category: "Juntoz",
+        value: 46.12 + 2 + 17.5,
+        open:  46.12 + 2,
+        stepValue:  46.12 + 2 + 17.5,
+        color: '#F50C0C',
+        displayValue: 17.5
+      }, {
+        category: "Comunal",
+        value: 46.12 + 2 + 17.5 + 0.35,
+        open: 46.12 + 2 + 17.5,
+        stepValue: 46.12 + 2 + 17.5 + 0.35,
+        color: '#F50C0C',
+        displayValue: 0.35
+      }, {
+        category: "AP SM",
+        value: 46.12 + 2 + 17.5 + 0.35 - 0.2,
+        open: 46.12 + 2 + 17.5 + 0.35,
+        stepValue: 46.12 + 2 + 17.5 + 0.35 - 0.2,
+        color: '#C6C4E8',
+        displayValue: 0.2
+      }, {
+        category: "TW",
+        value: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1,
+        open: 46.12 + 2 + 17.5 + 0.35 - 0.2,
+        stepValue: 46.12 + 2 + 17.5 - 0.2 - 19.1,
+        color: '#C6C4E8',
+        displayValue: 19.1
+      }, {
+          category: "Hiro Sake",
+          value: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1 - 0.35,
+          open: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1,   
+          stepValue: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1 - 0.35, 
+          color: '#C6C4E8',
+          displayValue: 0.35
+        }, {
+          category: "FIVIS I",
+          value: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1 - 0.35 -1.5,
+          open: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1 - 0.35,   
+          stepValue: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1 - 0.35 - 1.5, 
+          color: '#C6C4E8',
+          displayValue: 1.5
+        }, {
+          category: "FIVIS I'",
+          value: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1 - 0.35 -1.5 - 2,
+          open: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1 - 0.35 - 1.5,   
+          stepValue: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1 - 0.35 - 1.5 - 2, 
+          color: '#C6C4E8',
+          displayValue: 2
+        }, {
+          category: "Total",
+          value: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1 - 0.35 - 1.5 - 2,
+          open: 0,    
+          color: '#F65B5B',
+          displayValue: 46.12 + 2 + 17.5 + 0.35 - 0.2 - 19.1 - 0.35 - 1.5 - 2
+        }, {
+          category: "Collique'",
+          value: 0.27,
+          open: 0,   
+          stepValue: 0.27, 
+          color: '#F50C0C',
+          displayValue: 0.27
+        }, {
+          category: "SUAM'",
+          value: 0.27 - 0.1,
+          open: 0.27,   
+          stepValue: 0.27 - 0.1, 
+          color: '#C6C4E8',
+          displayValue: 0.1
+        }, {
+          category: "Juntoz'",
+          value:  0.27 - 0.1 - 0.37,
+          open:  0.27 - 0.1,   
+          stepValue:  0.27 - 0.1 - 0.37, 
+          color: '#C6C4E8',
+          displayValue: 0.37
+        }, {
+          category: "Comunal'",
+          value:  0.27 - 0.1 - 0.37 + 0.34,
+          open: 0.27 - 0.1 - 0.37,   
+          stepValue: 0.27 - 0.1 - 0.37 + 0.34, 
+          color: '#F50C0C',
+          displayValue: 0.34
+        } ];
+      
+      var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+      categoryAxis.dataFields.category = "category";
+      categoryAxis.renderer.minGridDistance = 40;
+      
+      var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+      
+      var columnSeries = chart.series.push(new am4charts.ColumnSeries());
+      columnSeries.dataFields.categoryX = "category";
+      columnSeries.dataFields.valueY = "value";
+      columnSeries.dataFields.openValueY = "open";
+      columnSeries.fillOpacity = 0.8;
+      columnSeries.sequencedInterpolation = true;
+      columnSeries.interpolationDuration = 1500;
+      
+      var columnTemplate = columnSeries.columns.template;
+      columnTemplate.strokeOpacity = 0;
+      columnTemplate.propertyFields.fill = "color";
+      
+      var label = columnTemplate.createChild(am4core.Label);
+      label.text = "{displayValue.formatNumber('$##.## k')}";
+      label.align = "center";
+      label.valign = "middle";
+      
+      
+      var stepSeries = chart.series.push(new am4charts.StepLineSeries());
+      stepSeries.dataFields.categoryX = "category";
+      stepSeries.dataFields.valueY = "stepValue";
+      stepSeries.noRisers = true;
+      stepSeries.stroke = new am4core.InterfaceColorSet().getFor("alternativeBackground");
+      stepSeries.strokeDasharray = "3,3";
+      stepSeries.interpolationDuration = 2000;
+      stepSeries.sequencedInterpolation = true;
+      
+      // because column width is 80%, we modify start/end locations so that step would start with column and end with next column
+      stepSeries.startLocation = 0.1;
+      stepSeries.endLocation = 1.1;
+      
+      chart.cursor = new am4charts.XYCursor();
+      chart.cursor.behavior = "none";
+      
+      }); // end am4core.ready()
+      
+
